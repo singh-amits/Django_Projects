@@ -1,0 +1,70 @@
+{% extends 'userauth/base.html' %}
+{% block content %}
+<<<<<<< HEAD
+{% comment %} 
+  Displays the answer given by user for each question and whether they were correct.
+  Also displays questions whch user could not attempt due to time constraint.
+  {% endcomment %}
+=======
+
+>>>>>>> e4bf78f (Documentation)
+  {% with object_list as answers %}
+    {% if answers %}
+    <body>
+      {% include 'userauth/navbar.html' %}  
+  <div class="container mb-3 mt-3">
+  <table class="table table-striped table-bordered datatable" id="datatable">
+    <thead>
+        <th>Question</th>
+        <th>Your answer</th>
+        <th>Result</th>
+    </thead>
+    <tbody>
+        {% for answer in answers %}
+        <tr>
+            <td>{{ answer.question }}</td>
+            <td>{{ answer.answer }}</td>
+            {% if answer.correct %}
+            <td style="background-color: rgb(105, 197, 13);">Correct</td>
+            {% else %}
+            <td style="background-color: rgb(241, 23, 23);">Incorrect</td>
+            {% endif%}
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+</body>
+  
+  {% else %}
+<body class="theme-bg">
+  {% include 'userauth/navbar.html' %}
+<header class="masthead d-flex align-items-center">
+  <div class="container px-4 px-lg-5 text-center text-white">
+      <h1 class="mb-1">You didn't answer any question!!</h1>
+      <h4 class="mb-5"><em>Good luck for the next time.</em></h4>
+      <a class="btn btn-light btn-xl" href="{% url 'quiz:quiz_category_list_all' %}">
+        Take another
+    </a>
+  </div>
+</header>
+
+</body>
+  {% endif %}
+  {% endwith %}
+
+
+</script>
+{% endblock %}
+{% block script %}
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script>
+<script>
+  
+  $('.datatable').DataTable({
+    lengthMenu : [[5,10,25,50,-1], [5,10,25,50,"All"]],
+  });
+</script>
+{% endblock %}

@@ -1,0 +1,65 @@
+.service-icon:before,
+.deal-price span:before,
+.service:hover .service-detail:before,
+.tab-forms ul.nav li.active a,
+.tab-forms form input[type="submit"],
+.controls li.active,
+.portfolio:hover .overlay > span,
+.table > a:hover,
+.coloured-layer:before,
+.client-img:after,
+.contact > input[type="submit"],
+.deal-hover-wrap:before,
+.table-head,
+.imp-details > a,
+.cube,
+.kenburns-text h5:before,
+.text-slide > h2:before,
+.parallax-text li:before,
+.reservation-form > form input[type="submit"],
+header.header2 .menu > nav > ul > li:hover > a{
+	background-color: #b07645;
+}
+
+.title h2 span,
+.deal-detail > i,
+.deal-desc > h3 span,
+.deal-desc > p a,
+.package-inner h6,
+.title2 > h2 span,
+.member-title > span,
+.testimonial blockquote span,
+.client > span,
+.table > i,
+.table > strong span,
+.table:hover > h4,
+.deal-detail > span i,
+.contact-info > h3 span,
+.bottom-footer p a,
+.page-top h1 i,
+.tip-detail > span,
+.table-row li a,
+.simple-title span,
+.menu nav li:hover > a,
+.social > a:hover,
+.deal-hover-wrap > a:hover,
+.deal-detail h4 a:hover,
+.slide1-title  span,
+.slide2-subtite2,
+.kenburns-text h1 i,
+.text-slide > h2 span,
+.parallax-text > h2,
+.reservation-form > h3 span,
+.welcome-box > h2 span,
+.simple-text > h4{
+	color:  #b07645;
+}
+
+.deal-price,
+.controls li.active,
+.member:hover .member-img:before,
+.contact > input[type="submit"],
+.reservation-form > form input[type="submit"]{
+	border-color:  #b07645;
+
+}

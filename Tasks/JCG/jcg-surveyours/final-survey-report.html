@@ -1,0 +1,979 @@
+<!doctype html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jcg-surveyors</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+  <meta name="description" content="Examples of just how powerful ArchitectUI really is!">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link href="main.d810cf0ae7f39f28f336.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  textarea::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  textarea::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px grey;
+  }
+
+  textarea::-webkit-scrollbar-thumb {
+    background: #43417E;
+    border-radius: 10px;
+  }
+
+  textarea::-webkit-scrollbar-thumb:hover {
+    background: #dadada;
+  }
+</style>
+
+<body>
+  <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
+    <div class="app-header">
+      <div class="app-header__logo">
+        <div class="logo-text">
+          <h3>P. Handler</h3>
+        </div>
+        <div class="header__pane ml-auto">
+          <div>
+            <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="app-header__mobile-menu">
+        <div>
+          <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="app-header__menu">
+        <span>
+          <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+            <span class="btn-icon-wrapper">
+              <i class="fa fa-ellipsis-v fa-w-6"></i>
+            </span>
+          </button>
+        </span>
+      </div>
+      <div class="app-header__content">
+        <div class="app-header-left">
+        </div>
+        <div class="app-header-right">
+          <div class="header-dots">
+            <div class="dropdown">
+              <div tabindex="-1" role="menu" aria-hidden="true"
+                class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
+                <div class="dropdown-menu-header">
+                  <div class="dropdown-menu-header-inner bg-premium-dark">
+                    <div class="menu-header-image"
+                      style="background-image: url('assets/images/dropdown-header/abstract4.jpg');">
+                    </div>
+                    <div class="menu-header-content text-white">
+                      <h5 class="menu-header-title">Users Online</h5>
+                      <h6 class="menu-header-subtitle">Recent Account Activity Overview</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="widget-chart">
+                  <div class="widget-chart-content">
+                    <div class="icon-wrapper rounded-circle">
+                      <div class="icon-wrapper-bg opacity-9 bg-focus"></div>
+                      <i class="lnr-users text-white"></i>
+                    </div>
+                    <div class="widget-numbers">
+                      <span>344k</span>
+                    </div>
+                    <div class="widget-subheading pt-2">
+                      Profile views since last login
+                    </div>
+                    <div class="widget-description text-danger">
+                      <span class="pr-1"><span>176%</span></span>
+                      <i class="fa fa-arrow-left"></i>
+                    </div>
+                  </div>
+                  <div class="widget-chart-wrapper">
+                    <div id="dashboard-sparkline-carousel-3-pop"></div>
+                  </div>
+                </div>
+                <ul class="nav flex-column">
+                  <li class="nav-item-divider mt-0 nav-item"></li>
+                  <li class="nav-item-btn text-center nav-item">
+                    <button class="btn-shine btn-wide btn-pill btn btn-warning btn-sm">
+                      <i class="fa fa-cog fa-spin mr-2"></i>View Details
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="app-main">
+      <div class="app-sidebar sidebar-shadow">
+        <div class="app-header__logo">
+          <div class="logo-src"></div>
+          <div class="header__pane ml-auto">
+            <div>
+              <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="app-header__mobile-menu">
+          <div>
+            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="app-header__menu">
+          <span>
+            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+              <span class="btn-icon-wrapper">
+                <i class="fa fa-ellipsis-v fa-w-6"></i>
+              </span>
+            </button>
+          </span>
+        </div>
+        <div class="scrollbar-sidebar">
+          <div class="app-sidebar__inner">
+            <ul class="vertical-nav-menu">
+
+              <li class="mm-active">
+                <a href="dashboard.html">
+                  <i class="metismenu-icon pe-7s-home"></i>Dashboards
+                </a>
+
+              </li>
+              <li class="mm">
+                <a href="claims-management.html">
+                  <i class="metismenu-icon pe-7s-news-paper"></i>Claims Mgmt.
+                </a>
+              </li>
+              <li class="mm">
+                <a href="cat-claims.html">
+                  <i class="metismenu-icon pe-7s-culture"></i>CAT's
+                </a>
+              </li>
+              <li class="mm">
+                <a href="#">
+                  <i class="metismenu-icon pe-7s-cash"> </i>Expenses
+                </a>
+              </li>
+              <li class="mm">
+                <a href="#">
+                  <i class="metismenu-icon pe-7s-user"></i>Accounts
+                </a>
+              </li>
+              <li class="mm">
+                <a href="#">
+                  <i class="metismenu-icon pe-7s-cloud"></i>Data Warehouse
+
+                </a>
+              </li>
+              <li class="mm">
+                <a href="#">
+                  <i class="metismenu-icon pe-7s-help1"></i>Help Center
+
+                </a>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="app-main__outer">
+        <div class="app-main__inner">
+          <div class="app-page-title app-page-title-simple">
+            <div class="page-title-wrapper">
+              <div class="page-title-heading top-headings summary-wd">
+                <div>
+                  <div class="page-title-head center-elem c-darkblue">
+                    <span class="d-inline-block"><a href="claims-management.html" class="c-bluelinking"><i
+                          class="ion-android-arrow-back"></i></a>&nbsp;&nbsp;Final Survey Report</span>
+                  </div>
+                  <div class="page-title-subheading opacity-10 inside-page-sh">
+                    <p>Last Updated on 27.09.2020 at 16:00 Hrs.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="header-btn-lg pr-0 m0">
+                <div class="widget-content p-0">
+                  <div class="widget-content-wrapper">
+                    <div class="widget-content-left  ml-3 mr-10 header-user-info">
+                      <div class="widget-heading"> Hi, Alex </div>
+                      <div class="widget-subheading"> P. Handler </div>
+                    </div>
+                    <div class="widget-content-left">
+                      <div class="btn-group">
+                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                          <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                          <img width="42" class="rounded-circle ml-3" src="assets/images/avatars/1.jpg" alt="">
+
+                        </a>
+                        <div tabindex="-1" role="menu" aria-hidden="true"
+                          class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
+                          <div class="dropdown-menu-header">
+                            <div class="dropdown-menu-header-inner bg-info">
+                              <div class="menu-header-image opacity-2"
+                                style="background-image: url('assets/images/dropdown-header/city3.jpg');">
+                              </div>
+                              <div class="menu-header-content text-left">
+                                <div class="widget-content p-0">
+                                  <div class="widget-content-wrapper">
+                                    <div class="widget-content-left mr-3">
+                                      <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                    </div>
+                                    <div class="widget-content-left">
+                                      <div class="widget-heading">Alina Mcloughlin
+                                      </div>
+                                      <div class="widget-subheading opacity-8">A
+                                        short profile description</div>
+                                    </div>
+                                    <div class="widget-content-right mr-2">
+                                      <button class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="scroll-area-xs" style="height: 150px;">
+                            <div class="scrollbar-container ps">
+                              <ul class="nav flex-column">
+                                <li class="nav-item-header nav-item">Activity</li>
+                                <li class="nav-item">
+                                  <a href="javascript:void(0);" class="nav-link">Chat
+                                    <div class="ml-auto badge badge-pill badge-info">
+                                      8</div>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="javascript:void(0);" class="nav-link">Recover Password</a>
+                                </li>
+                                <li class="nav-item-header nav-item">My Account
+                                </li>
+                                <li class="nav-item">
+                                  <a href="javascript:void(0);" class="nav-link">Settings
+                                    <div class="ml-auto badge badge-success">New
+                                    </div>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="javascript:void(0);" class="nav-link">Messages
+                                    <div class="ml-auto badge badge-warning">512
+                                    </div>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="javascript:void(0);" class="nav-link">Logs</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <ul class="nav flex-column">
+                            <li class="nav-item-divider mb-0 nav-item"></li>
+                          </ul>
+                          <div class="grid-menu grid-menu-2col">
+                            <div class="no-gutters row">
+                              <div class="col-sm-6">
+                                <button
+                                  class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-warning">
+                                  <i class="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i>
+                                  Message Inbox
+                                </button>
+                              </div>
+                              <div class="col-sm-6">
+                                <button
+                                  class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
+                                  <i class="pe-7s-ticket icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
+                                  <b>Support Tickets</b>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <ul class="nav flex-column">
+                            <li class="nav-item-divider nav-item">
+                            </li>
+                            <li class="nav-item-btn text-center nav-item">
+                              <button class="btn-wide btn btn-primary btn-sm"> Open
+                                Messages </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Card 1 -->
+              <div class="main-card mb-5 card border-25">
+
+                <div class="card-body card-pad">
+
+                  <div class="row">
+
+                    <div class="col-md-5 p-0">
+
+                      <div class="claim-info">
+                        <h4>Summary of Loss</h4>
+                        <div class="row">
+
+                          <table class="mb-0 table isa-table">
+                            <tbody>
+                              <tr>
+                                <th scope="row">JCG Ref. No. </th>
+                                <td>1234</td>
+                              </tr>
+
+                              <tr>
+                                <th scope="row">Insurer's Claim Ref. No.</th>
+                                <td>TBA</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Policy No.</th>
+                                <td>123456789123</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Insured</th>
+                                <td>Lagoon Hotels & Resorts Ltd.</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Type of Policy</th>
+                                <td>Standard Fire & Speciality Policy</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Policy Period</th>
+                                <td>25 Nov 2019 - 24 Nov 2020</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Loss Location</th>
+                                <td>4, Dadabhai Cross Rd Number 3, Navpada, Irla, Vile Parle West, Mumbai, Maharashtra
+                                  400056</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Date of Loss</th>
+                                <td>21 Oct 2020</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Type of Loss</th>
+                                <td>Cyclone</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Deductible</th>
+                                <td>5% of claim amount subject to minimum of INR 5,00,000/-</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Total Amount Claimed by the Insurer</th>
+                                <td>INR 36,12,789/-</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Gross Loss Assessed</th>
+                                <td>INR 17,05,232/-</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Loss Adjusted</th>
+                                <td>INR 19,07,557/-</td>
+                              </tr>
+
+
+                            </tbody>
+                          </table>
+
+
+
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-7">
+                      <div class="row pl-2 pr-2">
+                        <div class="col-md-12 pt-4">
+                          <div class="accord-fsr-scroll-ht">
+                            <div id="accordion" class="accordion-wrapper mb-3">
+                              <div class="card">
+                                <div id="headingOne" class="card-header">
+                                  <button type="button" data-toggle="collapse" data-target="#collapseOne1"
+                                    aria-expanded="false" aria-controls="collapseOne"
+                                    class="text-left m-0 p-0 btn btn-link btn-block">
+                                    <h5 class="m-0 p-0">The Preamble</h5>
+                                  </button>
+                                </div>
+                                <div data-parent="#accordion" id="collapseOne1" aria-labelledby="headingOne"
+                                  class="collapse">
+                                  <div class="card-body">
+                                    <form class="" autocomplete="off">
+                                      <div class="form-row">
+                                        <div class="col-md-12">
+                                          <p>Pursuant to the intimation received from your office on XX/XX/20XX to carry out the survey of the said loss located at
+                                            <span class="hide"></span><input id="txt" type="text">
+                                            , we contacted the Insured and visited the site on XX/XX/20XX for initial survey to verify the damages.
+                                          </p>
+                                          <p>The claim pertains to damages to the Insured’s 
+                                            <span class="hide"></span><input id="txt" type="text">
+                                            due to <span class="hide"></span><input id="txt" type="text"> on XX/XX/20XX at the Insured’s premises.
+                                          </p>
+                                          <p>During our survey, discussions were held with the concerned officials, necessary documents/ data were procured & the damages were physically verified and photographs arranged. </p>
+                                          <p>Subsequently, based on our initial observations, we had recommended to keep provision of INR XX,XX,XXX/- in the subject matter vide mail dated XX/XX/20XX.</p>
+                                          <p>Now, based on our survey and verification of the records / documents made available by the Insured, we hereby submit our Final Survey Report “Without Prejudice”, as under:</p>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div id="headingTwo" class="b-radius-0 card-header">
+                                  <button type="button" data-toggle="collapse" data-target="#collapseOne2"
+                                    aria-expanded="false" aria-controls="collapseTwo"
+                                    class="text-left m-0 p-0 btn btn-link btn-block">
+                                    <h5 class="m-0 p-0">Insurance Particulars</h5>
+                                  </button>
+                                </div>
+                                <div data-parent="#accordion" id="collapseOne2" class="collapse">
+                                  <div class="card-body">
+                                    <form class="" autocomplete="off">
+                                      <div class="form-row">
+                                        <div class="col-md-6">
+                                          <div class="position-relative form-group">
+                                            <label for="the_insurers" class="">The Insurers</label>
+                                            <input name="the_insurers" id="the_insurers" type="text" class="form-control"
+                                              >
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div class="position-relative form-group">
+                                            <label for="per_policy" class="">The Insured as per Policy</label>
+                                            <input name="per_policy" id="per_policy" type="text" class="form-control"
+                                              >
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div class="position-relative form-group">
+                                            <label for="policy_no" class="">Policy No.</label>
+                                            <input name="policy_no" id="policy_no" type="text"
+                                              class="form-control">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div class="position-relative form-group">
+                                            <label for="type_policy" class="">Type of Policy</label>
+                                            <input name="type_policy" id="type_policy" type="text"
+                                              class="form-control">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div class="position-relative form-group">
+                                            <label for="policy_period" class="">Policy Period</label>
+                                            <input name="policy_period" id="policy_period" type="text"
+                                              class="form-control">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div class="position-relative form-group">
+                                            <label for="occupancy" class="">Occupancy</label>
+                                            <input name="occupancy" id="occupancy" type="text"
+                                              class="form-control">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div class="position-relative form-group">
+                                            <label for="loss_location" class="">Loss Location</label>
+                                            <input name="loss_location" id="loss_location" type="text"
+                                              class="form-control">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div class="position-relative form-group">
+                                            <label for="total_sum" class="">Total Sum insured</label>
+                                            <input name="total_sum" id="total_sum" type="text"
+                                              class="form-control">
+                                              <span class="inr">INR</span>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div class="position-relative form-group">
+                                            <label for="addon_cover" class="">Add-On Covers</label>
+                                            <input name="addon_cover" id="addon_cover" type="text"
+                                              class="form-control">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div class="position-relative form-group">
+                                            <label for="clauses_warranties" class="">Clauses/ Warranties</label>
+                                            <input name="clauses_warranties" id="clauses_warranties" type="text"
+                                              class="form-control">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div class="position-relative form-group">
+                                            <label for="excess" class="">Excess</label>
+                                            <input name="excess" id="excess" type="text"
+                                              class="form-control">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div class="position-relative form-group">
+                                            <label for="hypothecation" class="">Hypothecation</label>
+                                            <input name="hypothecation" id="hypothecation" type="text"
+                                              class="form-control">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div id="headingThree" class="card-header">
+                                  <button type="button" data-toggle="collapse" data-target="#collapseOne3"
+                                    aria-expanded="false" aria-controls="collapseThree"
+                                    class="text-left m-0 p-0 btn btn-link btn-block">
+                                    <h5 class="m-0 p-0">About The Insured</h5>
+                                  </button>
+                                </div>
+                                <div data-parent="#accordion" id="collapseOne3" class="collapse">
+                                  <div class="card-body">
+                                    <form class="" autocomplete="off">
+                                      <div class="form-row">
+                                        <div class="col-md-12">
+                                          <div class="position-relative form-group">
+                                            <textarea name="about_the_insured" id="about_the_insured" class="form-control" placeholder=""></textarea>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div id="headingThree" class="card-header">
+                                  <button type="button" data-toggle="collapse" data-target="#collapseOne4"
+                                    aria-expanded="false" aria-controls="collapseThree"
+                                    class="text-left m-0 p-0 btn btn-link btn-block">
+                                    <h5 class="m-0 p-0">Circumstances & Cause of Loss</h5>
+                                  </button>
+                                </div>
+                                <div data-parent="#accordion" id="collapseOne4" class="collapse">
+                                  <div class="card-body">
+                                    <form class="" autocomplete="off">
+                                      <div class="form-row">
+                                        <div class="col-md-12">
+                                          <div class="position-relative form-group">
+                                            <textarea name="cause_of_loss" id="cause_of_loss" class="form-control" placeholder=""></textarea>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div id="headingThree" class="card-header">
+                                  <button type="button" data-toggle="collapse" data-target="#collapseOne5"
+                                    aria-expanded="false" aria-controls="collapseThree"
+                                    class="text-left m-0 p-0 btn btn-link btn-block">
+                                    <h5 class="m-0 p-0">Insured’s Claim</h5>
+                                  </button>
+                                </div>
+                                <div data-parent="#accordion" id="collapseOne5" class="collapse">
+                                  <div class="card-body">
+                                    <form class="" autocomplete="off">
+                                      <div class="form-row">
+                                        <div class="col-md-12">
+                                          <div class="position-relative form-group">
+                                            <textarea name="insured_claim" id="insured_claim" class="form-control" placeholder=""></textarea>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div id="headingThree" class="card-header">
+                                  <button type="button" data-toggle="collapse" data-target="#collapseOne6"
+                                    aria-expanded="false" aria-controls="collapseThree"
+                                    class="text-left m-0 p-0 btn btn-link btn-block">
+                                    <h5 class="m-0 p-0">Our Observations & Verifications</h5>
+                                  </button>
+                                </div>
+                                <div data-parent="#accordion" id="collapseOne6" class="collapse">
+                                  <div class="card-body">
+                                    <form class="" autocomplete="off">
+                                      <div class="form-row">
+                                        <div class="col-md-12">
+                                          <div class="position-relative form-group">
+                                            <textarea name="insured_claim" id="insured_claim" class="form-control" placeholder=""></textarea>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div id="headingThree" class="card-header">
+                                  <button type="button" data-toggle="collapse" data-target="#collapseOne7"
+                                    aria-expanded="false" aria-controls="collapseThree"
+                                    class="text-left m-0 p-0 btn btn-link btn-block">
+                                    <h5 class="m-0 p-0">Depreciation</h5>
+                                  </button>
+                                </div>
+                                <div data-parent="#accordion" id="collapseOne7" class="collapse">
+                                  <div class="card-body">
+                                    <form class="" autocomplete="off">
+                                      <div class="form-row">
+                                        <div class="col-md-12">
+                                          <div class="position-relative form-group">
+                                            <textarea name="depreciation" id="depreciation" class="form-control" placeholder=""></textarea>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div id="headingThree" class="card-header">
+                                  <button type="button" data-toggle="collapse" data-target="#collapseOne8"
+                                    aria-expanded="false" aria-controls="collapseThree"
+                                    class="text-left m-0 p-0 btn btn-link btn-block">
+                                    <h5 class="m-0 p-0">Salvage</h5>
+                                  </button>
+                                </div>
+                                <div data-parent="#accordion" id="collapseOne8" class="collapse">
+                                  <div class="card-body">
+                                    <form class="" autocomplete="off">
+                                      <div class="form-row">
+                                        <div class="col-md-12">
+                                          <div class="position-relative form-group">
+                                            <textarea name="salvage" id="salvage" class="form-control" placeholder=""></textarea>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div id="headingThree" class="card-header">
+                                  <button type="button" data-toggle="collapse" data-target="#collapseOne9"
+                                    aria-expanded="false" aria-controls="collapseThree"
+                                    class="text-left m-0 p-0 btn btn-link btn-block">
+                                    <h5 class="m-0 p-0">Policy Review</h5>
+                                  </button>
+                                </div>
+                                <div data-parent="#accordion" id="collapseOne9" class="collapse">
+                                  <div class="card-body">
+                                    <form class="" autocomplete="off">
+                                      <div class="form-row">
+                                        <div class="col-md-6">
+                                          <div class="position-relative form-group">
+                                            <label for="coverage" class="">Coverage</label>
+                                            <input name="coverage" id="coverage" type="text"
+                                              class="form-control">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div class="position-relative form-group">
+                                            <label for="excess" class="">Excess</label>
+                                            <input name="excess" id="excess" type="text"
+                                              class="form-control">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div class="position-relative form-group">
+                                            <label for="adequacy_sume" class="">Adequacy of Sum Insured:</label>
+                                            <input name="adequacy_sume" id="adequacy_sume" type="text"
+                                              class="form-control">
+                                              <span class="inr">INR</span>
+
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div id="headingThree" class="card-header">
+                                  <button type="button" data-toggle="collapse" data-target="#collapseOne10"
+                                    aria-expanded="false" aria-controls="collapseThree"
+                                    class="text-left m-0 p-0 btn btn-link btn-block">
+                                    <h5 class="m-0 p-0">Assessment Of Loss</h5>
+                                  </button>
+                                </div>
+                                <div data-parent="#accordion" id="collapseOne10" class="collapse">
+                                  <div class="card-body">
+                                    <form class="" autocomplete="off">
+                                      <div class="form-row">
+                                        <div class="col-md-12">
+                                          <div class="position-relative form-group">
+                                            <p>Based on our observations and verifications, the loss under each head has been assessed as follows:</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div id="headingThree" class="card-header">
+                                  <button type="button" data-toggle="collapse" data-target="#collapseOne11"
+                                    aria-expanded="false" aria-controls="collapseThree"
+                                    class="text-left m-0 p-0 btn btn-link btn-block">
+                                    <h5 class="m-0 p-0">Other Insurances & Contribution</h5>
+                                  </button>
+                                </div>
+                                <div data-parent="#accordion" id="collapseOne11" class="collapse">
+                                  <div class="card-body">
+                                    <form class="" autocomplete="off">
+                                      <div class="form-row">
+                                        <div class="col-md-12">
+                                          <div class="position-relative form-group">
+                                            <textarea name="other_insurances" id="other_insurances" class="form-control" placeholder=""></textarea>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div id="headingThree" class="card-header">
+                                  <button type="button" data-toggle="collapse" data-target="#collapseOne12"
+                                    aria-expanded="false" aria-controls="collapseThree"
+                                    class="text-left m-0 p-0 btn btn-link btn-block">
+                                    <h5 class="m-0 p-0">Third Party Aspect/subrogation</h5>
+                                  </button>
+                                </div>
+                                <div data-parent="#accordion" id="collapseOne12" class="collapse">
+                                  <div class="card-body">
+                                    <form class="" autocomplete="off">
+                                      <div class="form-row">
+                                        <div class="col-md-12">
+                                          <div class="position-relative form-group">
+                                            <textarea name="third_party" id="third_party" class="form-control" placeholder=""></textarea>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div id="headingThree" class="card-header">
+                                  <button type="button" data-toggle="collapse" data-target="#collapseOne13"
+                                    aria-expanded="false" aria-controls="collapseThree"
+                                    class="text-left m-0 p-0 btn btn-link btn-block">
+                                    <h5 class="m-0 p-0">Concluding Remarks</h5>
+                                  </button>
+                                </div>
+                                <div data-parent="#accordion" id="collapseOne13" class="collapse">
+                                  <div class="card-body">
+                                    <form class="" autocomplete="off">
+                                      <div class="form-row">
+                                        <div class="col-md-12">
+                                          <div class="position-relative form-group">
+                                            <p>We commend this report to Insurers with a recommendation to agree settlement of the claim at INR X,XX,XX,XXX/- net of adjustments and deductibles. </p>
+                                            <p>Photographs arranged by us have been attached along with the report.</p>
+                                            <p>No Breach of Warranty was observed by us. The loss is admissible as per the terms & conditions of the policy.</p>
+                                            <p>The Insured have provided consent on the above assessment vide their email dated XX.XX.20XX. Copy of their email has been annexed along with the report.</p>
+                                            <p>This report concludes our involvement in this matter, and we attach the relevant paperwork for Insurers attention.  </p>
+
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <a href="#"><img src="assets/img/icons/printer.png" class="print-icon"></a>
+                      <a href="#" class="save-ic-detail mb-15">Save</a>
+                      <a href="#" class="sm-ir-detail mb-15">Send Mail</a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="app-drawer-wrapper">
+    <!-- <div class="drawer-nav-btn">
+            <button type="button" class="hamburger hamburger--elastic is-active">
+                <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+            </button>
+          </div> -->
+    <div class="drawer-content-wrapper ">
+      <div class="scrollbar-container">
+        <div class="drawer-section">
+          <div class="row">
+            <div class="col-7">
+              <h5 class="c-darkblue"><i class="ion-android-arrow-back"></i>&nbsp;&nbsp;&nbsp;Notifications
+              </h5>
+            </div>
+            <div class="col-5 notification-alert">
+              <span>02 Notifications</span>
+            </div>
+          </div>
+          <div class="mt-3">
+            <h5 class="text-left card-title"><b>Today</b> </h5>
+            <div class="row">
+              <div class="col-12">
+                <div class="notify-box p-0 mb-4">
+                  <div class="row">
+                    <div class="col-md-12 d-flex pl-0">
+                      <div class="col-md-2">
+                        <span class="ml-2"><img src="assets/images/icici-icon.png" alt="Icici Bank" class="img-fluid">
+                        </span>
+                      </div>
+                      <div class="col-md-10 pl-0">
+                        <p class="mb-2"><strong> Krishna Iyer</strong> accepted your claim
+                          request for <strong>JCG Ref. No. 0591.</strong>
+                        </p>
+                        <p class="mb-2 c-darkgrey font15"><i class="ion-android-calendar"></i>
+                          28-10-2020</p>
+                        <p class="c-darkgrey font15 mb-2"><i class="lnr-map-marker "></i>
+                          Andheri East, Mumbai - 400012</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="notify-box p-0">
+                  <div class="row">
+                    <div class="col-md-12 d-flex pl-0">
+                      <div class="col-md-2">
+                        <span class="ml-2"><img src="assets/images/sbi-icon.png" alt="Sbi Bank" class="img-fluid">
+                        </span>
+                      </div>
+                      <div class="col-md-10 pl-0">
+                        <p class="mb-2"><strong> Rupesh Tayde</strong> sent you a claim request
+                          <strong>JCG Ref. No. 4201.</strong>
+                        </p>
+                        <p class="mb-2 c-darkgrey font15"><i class="ion-android-calendar"></i>
+                          27-10-2020</p>
+                        <p class="c-darkgrey font15 mb-3"><i class="lnr-map-marker "></i>
+                          Andheri East, Mumbai - 400012</p>
+                        <button class="mb-2 mr-2 btn-pill btn-transition btn btn-outline-danger">Reject</button>
+                        <button class="mb-2 mr-2 btn-pill btn-transition btn btn-outline-success">Accept</button>
+                        <button class="mb-2 mr-2 btn-icon btn-icon-only btn-pill btn btn-outline-secondary"><i
+                            class="pe-7s-paper-plane btn-icon-wrapper"> </i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h5 class="text-left card-title mt-4"><b>Yesterday</b> </h5>
+                  <div class="notify-box p-0">
+                    <div class="row">
+                      <div class="col-md-12 d-flex pl-0">
+                        <div class="col-md-2">
+                          <span class="ml-2"><img src="assets/images/sbi-icon.png" alt="Sbi Bank" class="img-fluid">
+                          </span>
+                        </div>
+                        <div class="col-md-10 pl-0">
+                          <p class="mb-2"><strong> Rupesh Tayde</strong> sent you a claim
+                            request <strong>JCG Ref. No. 5460.</strong>
+                          </p>
+                          <p class="mb-2 c-darkgrey font15"><i class="ion-android-calendar"></i> 27-10-2020</p>
+                          <p class="c-darkgrey font15 mb-3"><i class="lnr-map-marker "></i>
+                            Andheri East, Mumbai - 400012</p>
+                          <button class="mb-2 mr-2 btn-pill btn-transition btn btn-outline-danger">Reject</button>
+                          <button class="mb-2 mr-2 btn-pill btn-transition btn btn-outline-success">Accept</button>
+                          <button class="mb-2 mr-2 btn-icon btn-icon-only btn-pill btn btn-outline-secondary"><i
+                              class="pe-7s-paper-plane btn-icon-wrapper"> </i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h5 class="text-left card-title mt-4"><b>24 Oct, 2020</b> </h5>
+                  <div class="notify-box p-0">
+                    <div class="row">
+                      <div class="col-md-12 d-flex pl-0">
+                        <div class="col-md-2">
+                          <span class="ml-2"><img src="assets/images/sbi-icon.png" alt="Sbi Bank" class="img-fluid">
+                          </span>
+                        </div>
+                        <div class="col-md-10 pl-0">
+                          <p class="mb-2">Your expense request of <strong> ₹ 1500/-</strong>
+                            for <strong>JCG Ref.No. 4516</strong> has been accepted.
+                          </p>
+                          <p class="mb-2 c-darkgrey font15"><i class="ion-android-calendar"></i> 20-10-2020</p>
+                          <p class="c-darkgrey font15 mb-3"><i class="lnr-map-marker "></i>
+                            Andheri East, Mumbai - 400012</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="app-drawer-overlay d-none animated fadeIn"></div>
+  <script type="text/javascript" src="assets/scripts/main.d810cf0ae7f39f28f336.js"></script>
+</body>
+
+
+</html>

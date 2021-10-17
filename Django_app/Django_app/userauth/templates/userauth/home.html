@@ -1,0 +1,47 @@
+{% extends 'userauth/base.html' %}
+{% block content %}
+<body class="theme-bg">
+{% include 'userauth/navbar.html' %}
+{% if user.is_authenticated %}
+
+
+<header class="masthead d-flex align-items-center">
+    <div class="container px-4 px-lg-5 text-center text-white">
+        <h1 class="mb-1">Welcome {{ user.username }}!!</h1>
+        <h4 class="mb-5"><em>Take a quiz to test your knowledge</em></h4>
+        <a class="btn btn-light btn-xl" href="{% url 'quiz:quiz_category_list_all' %}">
+            Take a quiz
+        </a>
+        <a class="btn btn-light btn-xl" href="{% url 'quiz:user_progress' %}">
+            View Progress
+        </a>  
+
+        {% if incomplete_quiz %}
+        <hr>
+        <h4 class="mb-5"><em>You have incomplete quizzes</em></h4>
+            {% for quiz in incomplete_quiz %}
+            <a class="btn btn-light btn-xl" href="{% url 'quiz:quiz_question' quiz_name=quiz.url %}">
+                {{ quiz.url }}
+            </a>
+            {% endfor %}
+        {% endif %}
+    </div>
+</header>
+{% else %}
+<header class="masthead d-flex align-items-center">
+    <div class="container px-4 px-lg-5 text-center text-white">
+        <h1 class="mb-1">Welcome Stranger!!</h1>
+        <h4 class="mb-5"><em>Login or Register to view our quizzes</em></h4>
+        <a class="btn btn-light btn-xl" href="/login">
+            Login
+        </a>
+        <a class="btn btn-light btn-xl" href="/register">
+            Register
+        </a>
+    </div>
+</header>
+{% endif %}
+
+</body>
+{% endblock %}
+

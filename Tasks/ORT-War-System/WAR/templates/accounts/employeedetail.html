@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="content">
+    <div class="row">
+      <!-- left column -->
+      <div class="column">
+        <!-- general form elements -->
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <h3 class="box-title">Employee Detail</h3>
+          </div>
+          <!-- /.box-header -->
+          <!-- form start -->
+          <form role="form">
+            <div class="box-body">
+              <div class="form-group">
+
+              <label for="designation">Designation</label>
+              <input type="text" class=" " id="designation" size="40" placeholder=""><br>
+              <button>SignUp</button></li>
+              </div>
+
+              <table id="list" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th>Photo</th>
+                  <th>User Name</th>
+                  <th>Full Name</th>
+                  <th>Address</th>
+                  <th>Gender</th>
+                  <th>Email</th>
+                  <th>Designation</th>
+                  <th>Update</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td> </td>
+                  <td>Dummy</td>
+                  <td>Dumm1</td>
+                  <td>Thane</td>
+                  <td>M</td>
+                  <td>Dum@ort.com</td>
+                  <td>Devops</td>
+                  <td>Ongoing</td>
+
+                </tr>
+                              
+                </tfoot>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+{% endblock %}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+{% load bootstrap4 %}
+
+<!-- {# Load CSS and JavaScript #} -->
+{% bootstrap_css %}
+
+
+<!-- {# Display django.contrib.messages as Bootstrap alerts #} -->
+{% bootstrap_messages %}
+<head>
+
+    <!-- Custom CSS -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sidebar_menu.css' %}">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+
+    <title>My Awesome Site</title>
+</head>
+<body>
+
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+          <div class="sidebar-header">
+              <h3>War-App</h3>
+              <strong>War</strong>
+          </div>
+          
+          
+          <ul class="list-unstyled components">
+              <li>
+                  <a href="#Employee" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Employee Master</a>
+                  <ul class="collapse list-unstyled" id="Employee">
+                      <li>
+                          <a href="#">Display Employee Details</a>
+                      </li>
+                  </ul>
+              </li>
+                 
+                  <li>
+                      <a href="#Department" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Department Master</a>
+                      <ul class="collapse list-unstyled" id="Department">
+                          <li>
+                              <a href="#">+ Add Department</a>
+                          </li>
+                          <li>
+                              <a href="#"> Display Department</a>
+                          </li>
+                      </ul>
+                  </li>    
+          
+                  <li>
+                      <a href="#Tasks" data-toggle="collapse" aria-expanded="false"class="dropdown-toggle">Tasks</a>
+                      <ul class="collapse list-unstyled" id="Tasks">
+                          <li>
+                              <a href="#">+ Add Task</a>
+                          </li>
+                          <li>
+                              <a href="#"> Add User Task</a>
+                          </li>
+                          <li>
+                              <a href="#">Display Task</a>
+                          </li>
+                      </ul>
+                  </li>   
+                  
+                  <li>
+                      <a href=" " data-toggle="collapse" aria-expanded="false" class="">
+                       Code Helper</a>
+                  </li>
+          
+                  <li>
+                      <a href="#EXPRESS-MODE" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">EXPRESS-MODE</a>
+                      <ul class="collapse list-unstyled" id="EXPRESS-MODE">
+                          <li>
+                              <a href="#">+ Add EXPRESS-MODE</a>
+                          </li>
+                          <li>
+                              <a href="#"> Display EXPRESS-MODE</a>
+                          </li>
+                      </ul>
+                  </li> 
+
+                  <li>
+                      <a href="#Project" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Project</a>
+                         <ul class="collapse list-unstyled" id="Project">
+                          <li>
+                              <a href="#">+ New Project</a>
+                          </li>
+                          <li>
+                              <a href="#"> Display By Dept</a>
+                          </li>
+                          <li>
+                              <a href="#">Display By BA</a>
+                          </li>
+                      </ul>
+                  </li>
+
+                  <li>
+                  <a href="#">
+                    <!-- <i class=""></i> -->
+                      Attendance
+                  </a>
+                  </li>
+
+                  <li>
+                  <a href="#War" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">WAR</a>
+                      <ul class="collapse list-unstyled" id="War">
+                          <li>
+                              <a href="#">Check Express Mode</a>
+                          </li>
+                          <li>
+                              <a href="#"> Check War</a>
+                          </li>
+                      </ul>
+                  </li>
+                 
+                  <li>
+                  <a href="#WarResult" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">WAR RESULT</a>
+                      <ul class="collapse list-unstyled" id="WarResult">
+                          <li>
+                              <a href="#"> Display WAR Permission</a>
+                          </li>
+                          <li>
+                              <a href="#"> Employee Wise</a>
+                          </li>
+                          <li>
+                              <a href="#">All Employee</a>
+                          </li>
+                      </ul>
+                  </li>
+
+                  <li>
+                  <a href="#">
+                    <!--  <i class=" "></i> -->
+                      Contact
+                  </a>
+                 </li>
+
+          
+              </ul>
+          </li>
+      </ul>
+  </nav>
+
+      <!-- Page Content  -->
+      <div id="content">
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+
+                  <button type="button" id="sidebarCollapse" class="btn btn-info">
+                      <i class="fas fa-align-left"></i>
+                      <!-- <span>Toggle Sidebar</span> -->
+                  </button>
+                  <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fas fa-align-justify"></i>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="nav navbar-nav ml-auto">
+                          <li class="nav-item">
+                              <span class="item">Notifications</span>
+                          </li>
+                          <li class="nav-item">
+                              <img class="item" src="" alt="profile photo">
+                          </li>
+                          <li class="nav-item">
+                            <span class="item">Hello, {{request.user}} </span>
+                          </li>
+                          <li class="nav-item">
+                              <span class="item">
+                                <a href="{% url 'logout' %}">Logout</a>
+                              </span>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+
+    <div class="container-fluid">
+    {% block body %}
+    {% endblock %}
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    {% bootstrap_javascript %}
+
+   <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+    
+</body>
+</html>

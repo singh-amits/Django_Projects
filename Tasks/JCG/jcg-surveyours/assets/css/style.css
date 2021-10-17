@@ -1,0 +1,151 @@
+.nav-link {
+  display: flex;
+  align-items: center;
+  /* transition: background-color 0.3s ease, color 0.3s ease; */
+  cursor: pointer;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+.nav-item .nav-link {
+  font-weight: normal;
+  border: none;
+}
+.nav-link.active {
+  color: #3f6ad8;
+}
+.nav-link:hover {
+  cursor: pointer;
+}
+.nav .nav-link {
+  /* text-transform: uppercase; */
+  width: 100%;
+  padding-bottom: 15px;
+  display: block;
+  color: #bbbbbb;
+  border: none;
+}
+a {
+  color: #3f6ad8;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+a.nav-item {
+  position: relative;
+  border: none;
+}
+
+.nav-item {
+  font-weight: normal;
+  border: none;
+}
+/* .nav-link {
+  font-weight: normal;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  padding: 20px 10px;
+  border: none;
+
+} */
+.card-header > .nav .nav-link {
+  text-transform: none;
+  width: 100%;
+  display: block;
+  color: #495057;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  /* border: 1px solid rgba(26, 54, 126, 0.125);
+  border-radius: 0.25rem;
+} */
+  /* *
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+  /* .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+} */
+  /* .tab-header {
+  display: flex;
+  align-items: center;
+  border-bottom-width: 1px;
+  padding: 10px;
+  padding-right: 0.625rem;
+  height: 3.5rem;
+} */
+}
+#myInput {
+  box-sizing: border-box;
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #3e8e41;
+}
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.show {
+  display: block;
+}
+
+/* Filter Dropdown CSS */

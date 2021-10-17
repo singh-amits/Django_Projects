@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+</div>
+<div class="panel-body p25 bg-light">
+
+    <div class="form-group has-primary">
+        <div class="section-divider mt10 mb40" style="margin-bottom: 50px!important">
+            <span>Set up your account</span>
+        </div>
+
+        <div class="section">
+            <div class="col-md-6">
+                <label class="col-md-12 control-label text-left" for="inputPrimary">User Name</label>
+                <div class="col-md-12">
+                    <label for="username" class="field prepend-icon">
+                        <input name="TextBox1" type="text" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;TextBox1\&#39;,\&#39;\&#39;)&#39;, 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="TextBox1" name="username" placeholder="Enter Unique name" class="gui-input" />
+                        <span id="Label1"></span>
+                        <label for="username" class="field-icon">
+                            <i class="fa fa-user"></i>
+                        </label>
+                        <span id="RequiredFieldValidator1" style="visibility:hidden;"><font style="color:Red;">User Name Required</font></span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label class="col-md-12 text-left control-label" for="inputPrimary">Full Name</label>
+                <div class="col-md-12">
+
+                    <label for="username" class="field prepend-icon">
+                        <input name="TextBox2" type="text" id="TextBox2" class="gui-input" />
+                        <label for="username" class="field-icon">
+                            <i class="fa fa-user"></i>
+                        </label>
+                    </label>
+
+                   
+                    <span id="RequiredFieldValidator8" style="visibility:hidden;"><font style="color:Red;"><font style="color:Red;">Phone No. Required</font></span>
+                                                <span id="RegularExpressionValidator4" style="visibility:hidden;">Invalid Mobile No</span>
+                                                <span id="Label2" style="color: Red;"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="col-md-12 text-left control-label" for="inputPrimary">Address</label>
+                                            <div class="col-md-12">
+                                                <label for="username" class="field prepend-icon">
+                                                    <input name="TextBox4" type="text" id="TextBox4" class="gui-input" />
+                                                    <label for="username" class="field-icon">
+                                                        <i class="fa fa-book"></i>
+                                                    </label>
+                                                </label>
+
+                                                <span id="RequiredFieldValidator4" style="visibility:hidden;"><font style="color:Red;">Address Required</font></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="col-md-12 text-left control-label" for="inputPrimary">Gender</label>
+                                            <div class="col-md-12">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<table id="RadioButtonList1" class="radio-custom radio-primary mb5">
+	<tr>
+		<td><input id="RadioButtonList1_0" type="radio" name="RadioButtonList1" value="Male    " checked="checked" /><label for="RadioButtonList1_0">Male    </label></td><td><input id="RadioButtonList1_1" type="radio" name="RadioButtonList1" value="Female" /><label for="RadioButtonList1_1">Female</label></td>
+	</tr>
+</table>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="col-md-12 text-left control-label" for="inputPrimary">Email ID</label>
+                                            <div class="col-md-12">
+                                                <label for="username" class="field prepend-icon">
+                                                    <input name="TextBox5" type="text" id="TextBox5" placeholder="Email Address" class="gui-input" />
+                                                    <label for="username" class="field-icon">
+                                                        <i class="fa fa-at"></i>
+                                                    </label>
+                                                </label>
+
+                                                <span id="RequiredFieldValidator5" style="visibility:hidden;"><font style="color:Red;">Email Required</font></span>
+                                                &nbsp;<span id="RegularExpressionValidator1" style="color:Red;visibility:hidden;">Invalid Email ID</span>
+                                            </div>
+                                        </div>                                        
+                                        <div class="col-md-6">
+                                            <label class="col-md-12 text-left control-label" for="inputPrimary">Role</label>
+                                            <div class="col-md-12">
+                                                <label class="field select">
+                                                    <select name="DropDownList1" id="DropDownList1">
+	<option value="1">Team Member</option>
+	<option value="2">Department Head</option>
+	<option value="3">Administrator</option>
+	<option value="4">Department Head/Administrator</option>
+
+</select>
+                                                
+<i class="arrow"></i>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="col-md-12 text-left control-label" for="inputPrimary">Designation</label>
+                                            <div class="col-md-12">
+                                                <label for="username" class="field prepend-icon">
+                                                    <input name="TextBox6" type="text" id="TextBox6" class="gui-input" />
+
+                                                    <label for="username" class="field-icon">
+                                                        <i class="fa fa-desktop"></i>
+                                                    </label>
+                                                </label>
+                                                <span id="RequiredFieldValidator6" style="visibility:hidden;"><font style="color:Red;">Designation Required</font></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="col-md-12 text-left control-label" for="inputPrimary">Department</label>
+                                            <div class="col-md-12">
+                                                <label class="field select">
+                                                    <select name="DropDownList2" id="DropDownList2">
+	<option value="ADMIN">HR &amp; Administrator Department</option>
+	<option value="BD">Business Development Department</option>
+	<option value="CORE">Core Team</option>
+	<option value="DNET">.Net Department</option>
+	<option value="GD">GD &amp; UI/UX</option>
+	<option value="MERN">MERN Stack</option>
+	<option value="MOBILE">Mobile Department</option>
+	<option value="PHP">PHP Department</option>
+	<option value="PS">Purple Soil</option>
+	<option value="PYTHON">Python Department</option>
+	<option value="QA">Testing and Quality Assurance Department</option>
+	<option value="SUPPORT">Support Department</option>
+	<option value="WFD">Wordpress &amp; Frontend Department</option>
+	<option value="WSITE">WebSite Department</option>
+
+</select>
+
+<i class="arrow"></i>
+</label>
+</div>
+</div>
+<div class="col-md-6">
+<label class="col-md-12 text-left control-label" for="inputPrimary">Photo</label>
+<div class="col-md-12">
+<img id="Img1" name="Img1" class="ig" alt="" src="Images/Blank/blank_man.jpg" height="100px" width="80px"
+    onclick="document.getElementById('fileupload').click()" />
+<input id="fileupload" type="file" name="fileupload" style="display: none;" src="Images/Blank/blank_man.jpg" />
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="panel-footer clearfix">
+    <div class="row mt20 text-center">
+            <a id="LinkButton1" class="button btn-primary" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;LinkButton1&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Create Account  <i class="fa fa-user-plus"></i></a>
+      
+            <a id="LinkButton2" class="button btn-success" href="javascript:__doPostBack(&#39;LinkButton2&#39;,&#39;&#39;)">Back  <i class="fa fa-backward"></i></a>
+      
+    </div>
+</div>
+</div>
+{% endblock %}
+

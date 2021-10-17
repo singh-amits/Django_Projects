@@ -1,0 +1,60 @@
+{% extends 'base.html' %} {% block content %}
+<section class="content">
+  <div class="row">
+    <!-- left column -->
+    <div class="column">
+      <!-- general form elements -->
+      <div class="box box-primary">
+        <div class="box-header with-border">
+          <h3 class="box-title">Code Helper</h3>
+        </div>
+        <!-- /.box-header -->
+        <!-- form start -->
+        <form role="form">
+          <div class="box-body">
+            <div class="form-group">
+              <label for="language" id="left">Language:</label> <br />
+              <select name="lamguage" id="keyword" size=" ">
+                <br />
+                <option value="lang1" size="30" aria-disabled="true">
+                  Select Language
+                </option>
+                <option value="lang2" size="30">Python</option>
+                <option value="lang3" size="30">. Net</option>
+              </select>
+              <br />
+            </div>
+
+            <label for="keyword">Keyword:</label><br />
+            <input type="text" id="keyword" name="keyword" /><br />
+
+            <label for="title">Title:</label><br />
+            <input type="text" id="title" name="title" /><br /><br />
+
+            <form action=" ">
+              <label for="Upload">Upload File</label><br />
+              <input type="file" id="myFile" name="filename" />
+              <input type="button" size="30" value="Upload" />
+            </form>
+            <br /><br />
+
+            <label for="name">Project Name:</label><br />
+            <input type="text" id="pname" size="35" name="pname" /><br />
+
+            <label for="name" aria-setsize="50">Description:</label><br />
+            <input type="text" id="fname" name="fname" size="50" /><br /><br />
+          </div>
+
+          <center>
+            <div class="box-footer">
+              <button type="add" class="btn btn-primary">Add</button>
+              <button type="Cancel" class="btn btn-primary">Cancel</button>
+            </div>
+          </center>
+        </form>
+      </div>
+
+      {% endblock %}
+    </div>
+  </div>
+</section>

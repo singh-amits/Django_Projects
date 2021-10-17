@@ -1,0 +1,72 @@
+@media only screen and (min-width: 1260px) and (max-width: 1290px) {
+	.height-sc {
+		height: 50vh;
+	}
+	.height-sc-activity {
+		height: 40vh;
+	}
+	#calendar_weekdays div, #calendar_content div {
+		width: 40.9px !important;
+		height: 48px !important;
+	}
+	.print-icon{
+		left: 40%!important;
+	}
+}
+
+@media only screen and (min-width: 1420px) and (max-width: 1450px) {
+	.height-sc {
+		height: 52vh;
+	}
+	.height-sc-activity {
+		height: 42vh;
+	}
+	#calendar_weekdays div, #calendar_content div {
+		width: 49.6px !important;
+    height: 50px !important;
+    line-height: 50px !important;
+	}
+	.print-icon{
+		left: 46%!important;
+	}
+	.card-radius{
+		    margin-bottom: 28px;
+	}
+}
+
+@media only screen and (min-width: 1530px) and (max-width: 1540px) {
+	.height-sc {
+		height: 50vh;
+	}
+	.height-sc-activity {
+		height: 41vh;
+	}
+	#calendar_weekdays div, #calendar_content div {
+		width: 40.9px !important;
+		height: 48px !important;
+	}
+	.print-icon{
+		left: 50%!important;
+	}
+}
+
+@media only screen and (min-width: 1590px) and (max-width: 1610px) {
+	.height-sc {
+		height: 50vh;
+	}
+	.height-sc-activity {
+		height: 41vh;
+	}
+	#calendar_weekdays div, #calendar_content div {
+		width: 40.9px !important;
+		height: 48px !important;
+	}
+}
+
+@media only screen and (min-width: 1536px) and (max-width: 864px){
+    .forms-wizard-vertical .form-wizard-content {
+    width: 100%;
+    overflow: hidden;
+}
+}
+

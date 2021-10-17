@@ -1,0 +1,45 @@
+{% extends 'userauth/base.html' %}
+{% block content %}
+<style>
+.help-block{
+    display: none;
+}
+</style>
+{% load crispy_forms_tags %}
+<style>
+.help-block{
+    display : none;
+}
+</style>
+<body class="theme-bg">
+    {% include 'userauth/navbar.html' %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-9 col-xl-5">
+                <div class="card shadow-lg o-hidden border-0 my-5">
+                    <div class="card-body p-0">
+                        <div class="col-lg-12">
+                            <div class="p-3 text-center">
+                                <div class="text-center">
+                                    <h4 class="text-dark mb-4">Register</h4>
+                                </div>
+                                <form method="POST">
+                                    {% csrf_token %}
+                                    {{ form|crispy }}
+                                    <hr>
+                                    <button type="submit" class="btn theme-bg text-white btn-user">Register</button>
+                                </form>
+                                <hr>
+                                <div class="text-center"><a href="/login">
+                                    <button class="btn theme-bg text-white btn-user">OR Login</button>
+                                </a></div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}

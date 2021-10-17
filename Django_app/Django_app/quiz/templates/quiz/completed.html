@@ -1,0 +1,19 @@
+{% extends 'userauth/base.html' %}
+{% block content %}
+<body class="theme-bg">
+    {% include 'userauth/navbar.html' %}
+<header class="masthead d-flex align-items-center">
+    <div class="container px-4 px-lg-5 text-center text-white">
+        <h1 class="mb-1">You have already attempted this quiz!!</h1>
+        <h4 class="mb-5"><em>Take another quiz or view your result for this quiz</em></h4>
+        <a class="btn btn-light btn-xl" href="{% url 'quiz:quiz_category_list_all' %}">
+            View quizzes
+        </a>
+        <a class="btn btn-light btn-xl" href="{% url 'quiz:quiz_results' quiz_name=quiz.slug %}">
+            View Result
+        </a>
+    </div>
+</header>
+
+</body>
+{% endblock %}

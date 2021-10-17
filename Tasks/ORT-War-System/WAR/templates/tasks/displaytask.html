@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="content">
+    <div class="">
+      <!-- left column -->
+      <div class=" ">
+        <!-- general form elements -->
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <h3 class="box-title">Displaying Task Info</h3>
+          </div>
+          <!-- /.box-header -->
+          <!-- form start -->
+          <form role="form">
+            <div class="box-body">
+              <div class="form-group">
+                
+                <label for="year">Year</label><br>
+                <select name="" type="text" disabled id="year" size="">
+                <option value="" size="40">2021</option>
+                <option value="" size="40">2020</option>
+                <option value="" size="40">2019</option>
+                </select> <br><br>
+
+                <label for="week">week</label><br>
+                <select name="" type="text" disabled id="week" size="">
+                <option value="" size="40">20</option>
+                <option value="" size="40">21</option>
+                <option value="" size="40">22</option>
+                </select> <br><br>
+
+                <table id="list" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                  <th>Date</th>
+                  <th>Day</th>
+                  <th>Task</th>
+                  <th>Status</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>M </td>
+                    <td>Dummy</td>
+                    <td>Dumm1</td>
+                    <td>Thane</td>
+                   </tr>
+                                
+                  </tfoot>
+                </table>
+              </div>
+              <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </section>
+  
+{% endblock %}

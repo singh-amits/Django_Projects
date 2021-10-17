@@ -1,0 +1,64 @@
+{% extends 'userauth/base.html' %}
+{% block content %}
+
+    {% with object_list as progress %}
+    {% if progress %}
+    <body>
+      {% include 'userauth/navbar.html' %}
+  <div class="container mb-3 mt-3">
+  <table class="table table-striped table-bordered datatable" id="datatable">
+    <thead>
+        <th>Quiz</th>
+        <th>Score</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Questions Answered</th>
+        <th>Status</th>
+    </thead>
+    <tbody>
+        {% for quiz in progress %}
+        <tr>
+            <td>{{ quiz.quiz }}</td>
+            <td>{{ quiz.score }}</td>
+            <td>{{ quiz.start }}</td>
+            <td>{{ quiz.end }}</td>
+            <td>{{ quiz.answered }}</td>
+            {% if quiz.complete %}
+            <td style="background-color: rgb(105, 197, 13);">Completed</td>
+            {% else %}
+            <td style="background-color: rgb(241, 23, 23);">Incomplete</td>
+            {% endif%}
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+</div>
+</body>
+{% else %}
+<body class="theme-bg">
+  {% include 'userauth/navbar.html' %}
+<header class="masthead d-flex align-items-center">
+  <div class="container px-4 px-lg-5 text-center text-white">
+      <h1 class="mb-1">You have not attempted a quiz yet!!</h1>
+      <h4 class="mb-5"><em>Take a quiz to see progress.</em></h4>
+      <a class="btn btn-light btn-xl" href="{% url 'quiz:quiz_category_list_all' %}">
+        Take quiz
+    </a>
+  </div>
+</header>
+  {% endif %}
+
+  {% endwith %}
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script>
+<script>
+  
+  $('.datatable').DataTable({
+    lengthMenu : [[5,10,25,50,-1], [5,10,25,50,"All"]],
+  });
+
+</script>
+   
+
+{% endblock %}

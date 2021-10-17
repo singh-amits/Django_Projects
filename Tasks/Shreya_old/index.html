@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="css/responsive.css" rel="stylesheet" type="text/css" /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- javascript -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <title>
+      Shreya Tours & Travels
+    </title>
+    
+</head>
+
+
+<header>    
+     <!-- <div class="jumbotron jumbotron-fluid fixed-top"> -->
+            <div class="container">
+            <div class="header-logo">
+              <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top">
+                <a class="navbar-brand" href="#"  title=""><img src="images/Shreya1.png" alt="" /></a>
+                 <div class="menu">
+                    <nav>
+                     <ul>
+                       <li><a href="home" title="" class="smoothScroll">Home</a></li>
+                        <li><a href="aboutus" title="" class="smoothScroll">About Us</a></li>
+                        <li><a href="gallery" class="smoothScroll" title="">Gallery</a></li>
+                        <!-- <li>
+                        <label for="tours">Tours</label>
+                        <select id="tours" name="tours" size="3">
+                          <option value="volvo">International Tours</option>
+                          <option value="saab">Domestic Tours</option>
+                          <option value="fiat">Weekend Gateways</option>
+                        </select>
+                      </li> -->
+                        <li><a href="tours" data-toggle="collapse show">Tours</a>
+                          <div id="tours" class="collapse"> 
+                            <ul>
+                              <li><a href="tours" title="">International Tours</a></li>
+                              <li><a href="tours" title="">Domestic Tours</a></li>
+                              <li><a href="tours" title="">Weekend Gateways</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        
+                        <li><a href="client" class="smoothScroll" title="">Our Clientele</a></li>
+                        
+                        <li><a href="contact" class="smoothScroll" title="">Contact Us</a></li>
+                      </div>
+                      <div class="social">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-pinterest"></i>
+                    </div>
+                </div>
+          </ul>
+       </div>
+      </nav>
+    </div>
+  </nav>  
+</header>
+
+<body>
+  <section>
+<div id="demo" class="carousel slide" data-ride="carousel">
+​ <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+  </ul> `
+  =<div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/slider/slider_image1.jpg" alt="Image1" width="1100" height="600">
+    </div>
+    <div class="carousel-item">
+      <img src="images/slider/slider_image2.jpg" alt="Image2" width="1100" height="600">
+    </div>
+    <div class="carousel-item">
+      <img src="images/slider/slider_image3.jpg" alt="Iamge3" width="1100" height="600">
+    </div>
+    <div class="carousel-item">
+        <img src="images/slider/slider_image4.jpg" alt="Iamge4" width: 100%; height= 100%; opacity: 0;>
+      </div>
+</div>
+</section>
+  
+
+<!-- <section>
+  <section class="title">
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Responsive</h1>
+      </div>
+    </div>
+  </section> -->
+
+<section>
+  <div class="block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 column">
+          <div class="title">
+            <span>BOOK THE TRIP AND ENJOY SEASON</span>
+            <h2>PREMIUM <span> PACKAGES</span></h2>
+            <p>Premium tour packages which are superlative in every manner!
+              With the most competitive prices available.
+            </p>
+          </div>
+</section>       
+
+
+<section id="places">
+  <div class="container">
+    <div class="row">
+      <div class="large-6 columns">
+      <div class="owl-carousel owl-theme owl-loaded owl-drag"></div>
+        <div class="owl-carousel owl-theme">
+
+          <div class="img">
+            <!-- <h4>1</h4> -->
+            <div class="team-carousel">
+              <img src="images/bali.jpg"class="float-left" alt="" />
+              <div id="overlay" onclick="off()">
+                <div id="text">Overlay Text</div>
+              </div>
+              
+              <div style="">
+                <h2>VIEW PACKAGE</h2>
+                <button onclick="on()">Turn on overlay effect</button>
+              </div>
+                    <div class="deal-hover-wrap my_deal_hover">
+                      <p>Bali is magical. As probably the most famous island in Indonesia,Bali blends..... </p>
+                      <a href="bali" title="">VIEW PACKAGE </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="detail">
+                  <h4><a href="bali" title="">Bali </a></h4>
+                 </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="img">
+            <!-- <h4>2</h4> -->
+            <img src="images/italy.jpg" alt="" />
+                <div class="hover">
+                  <div class="deal-hover-wrap my_deal_hover">
+                    <p>Ask an Italian where in the world they would most like to live, and the odds..... </p>
+                    <a href="italy" title="">VIEW PACKAGE </a>
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+               <h4><a href="italy" title="">Italy  </a></h4>
+              </div>
+            </div>
+         </div>
+
+         <div class="img">
+            <!-- <h4>2</h4> -->
+            <img src="images/florence.jpg" alt="" />
+                <div class="hover">
+                  <div class="deal-hover-wrap my_deal_hover">
+                    <p>Florence's museums, palaces, and churches house some of the greatest artistic..... </p>
+                      <a href="florence" title="">VIEW PACKAGE </a>
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+               <h4><a href="florence" title="">florence  </a></h4>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-md-12 column">
+            <div class="img">
+              <!-- <h4>2</h4> -->
+              <img src="images/greece.jpg" alt="" />
+                  <div class="hover">
+                    <div class="deal-hover-wrap my_deal_hover">
+                      <p>Greece is one of the most popular tourist destinations in the world. With over..... </p>
+                      <a href="greece" title="">VIEW PACKAGE </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="detail">
+                  <h4><a href="greece" title="">Greece  </a></h4>
+                 </div>
+              </div>
+              </div>
+
+</Section>          
+          
+
+
+
+
+
+    
+            
+
+<div class="block">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 column">
+        <div class="title">
+          <span>BOOK THE TRIP AND ENJOY SEASON</span>
+          <h2>PREMIUM <span> PACKAGES</span></h2>
+          <p>Premium tour packages which are superlative in every manner!
+            With the most competitive prices available.
+          </p>
+        </div>
+
+        <div class="about">
+              <div class="row">
+                <div class="col-md-6 column">
+                  <h3>Travel More. Stress less</h3>
+                  <p>
+                    Shreya Tours & Travels is a full-service travel company dedicated at providing corporate, leisure, meeting & management services. We provide integrated travel experience to expedition enthusiasts across the world! Our 8 years of experience has earned us a niche in the Travel industry.
+                  </p>
+                  <p>
+                    Our company provides services in all travel related activities like Airline ticketing, Rail ticketing, Car hire, Hotel booking, Passport & VISA services. We aim at providing quality service to our valuable clients, round the clock, at very competitive rates. We have triumphantly served our clients with the most memorable experience; this has helped us built a loyal base of customers who vouch by our services. With this website we aspire to grow our reach far & beyond, and cater more and more voyagers who are looking for a travel rush in India and abroad. From beautiful beaches, to historic masterpieces, to jungles, wildlife and man-made future cities.<span style="visibility:hidden;"> No matter where you want to go, we will bring to you, your ideal vacation tailor made and customized.</span>
+                   </p>
+                </div>
+
+                <div class="col-md-6 column">
+                  <div class="logos">
+                    <img src="images/International.jpg" style="width:100%;">
+                  </div>
+                </div>
+
+              <!-- The Space which is between Travel more and our client -->
+
+              <div class="counters-bar coloured-layer">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+      
+                  <!-- <h1>My First Bootstrap Page</h1> -->
+                  <!-- <p>This part is inside a .container-fluid class.</p>
+                  <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>            -->
+                </div>
+              </div>
+            </div>
+                
+
+
+
+
+
+                <section id="bout">
+                  <div id="bout" class="block remove-gap remove-bottom">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="title">
+                            <span></span>
+                            <h2>OUR <span>CLIENTELE</span></h2>
+                            <p>Shreya Tours & Travels is a leading Tours & Travel website company based in Mumbai. We provide integrated travel experience to expedition enthusiasts across the world!</p>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+ <section>
+    <!-- <div class="jumbotron jumbotron-fluid"> -->
+      <div class="container">
+		<div class="row">
+				<div class="col-md-5.5 column">
+					<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d471.491662798825!2d72.85804028657715!3d19.02266047750648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d19.0226586!2d72.8579075!4m3!3m2!1d19.022651!2d72.8578177!5e0!3m2!1sen!2sin!4v1436064391040" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+      
+				<div class="col-md-3 column">
+					<div class="contact-info">
+						<h3>CONTACT <span>US NOW</span></h3>
+						<p>We are looking forward to hear from you. Reach out to us through mail, call or drop down at the address mentioned below. 
+						</p>
+						<ul>
+							<li><i class="fa fa-map-marker"></i>106/107,Room No.18,Wadala</li>
+							<li style="padding-left:30px;"> Road No.7A, Near Andhra School,</li>
+							<li style="padding-left:30px;">Wadala (W), Mumbai - 400031</li>
+							<li><i class="fa fa-phone"></i>022 24161702 / 022 24134486</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2 column">
+					<div id="text"></div>
+					<form  class="contact" method="post" action="contact.php" name="contactform" id="contactform" />
+						<input name="name" type="text" id="name" placeholder="Name" />
+						<input  name="email" type="text" id="email"  placeholder="Email" />
+						<input type="text" placeholder="Subject" name="txtsubject" id="txtsubject"/>
+						<input type="hidden" placeholder="" name="page" id="page" value="Index"/>
+						<textarea name="comments" id="comments"  placeholder="Details"></textarea>
+						<input type="submit" id="submit" value="Contact Now" />
+					</form>				</div>
+		</div>
+	</div>
+ </section>
+
+</div>
+<script>
+  $(document).ready(function() {
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        600: {
+          items: 3,
+          nav: false
+        },
+        1000: {
+          items: 5,
+          nav: true,
+          loop: false,
+          margin: 20
+        }
+      }
+    })
+  })
+</script>
+</body>
+</html>
+
+
+
+

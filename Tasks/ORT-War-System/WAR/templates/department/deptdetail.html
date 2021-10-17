@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="content">
+    <div class="row">
+      <!-- left column -->
+      <div class="column">
+        <!-- general form elements -->
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <h3 class="box-title">Department Details</h3>
+          </div>
+          <!-- /.box-header -->
+          <!-- form start -->
+          <form role="form">
+            <div class="box-body">
+              <div class="form-group">
+
+
+              <table id="data" class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                      <th>Dept.ID</th>
+                      <th>Department</th>
+                      <th>Team Members</th>
+                      <th>Dept Head</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>Python</td>
+                      <td>Django</td>
+                      <td>PSQL</td>
+                      <td>REST</td>
+                    </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <!-- /.box-body -->
+              </div>
+              <!-- /.box -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </section>
+  
+{% endblock %}

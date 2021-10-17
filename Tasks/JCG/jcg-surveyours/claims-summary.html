@@ -1,0 +1,1542 @@
+<!doctype html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jcg-surveyors</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="Examples of just how powerful ArchitectUI really is!">
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <link href="main.d810cf0ae7f39f28f336.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<style>
+    .dropdown-menu {
+        min-width: 9rem;
+    }
+
+    .dropdown-menu-rounded {
+        padding-left: 5px;
+        padding-right: 0;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        color: #acacac;
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    .dropdown-menu-header {
+        margin-bottom: 0;
+    }
+
+    .sub-li {
+        padding-left: 0;
+        list-style-type: none;
+        line-height: 29px;
+        text-transform: capitalize;
+        color: #555555;
+        font-size: 15px;
+        font-weight: 500;
+    }
+</style>
+
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
+        <div class="app-header">
+            <div class="app-header__logo">
+                <div class="logo-text">
+                    <h3>P. Handler</h3>
+                </div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic"
+                            data-class="closed-sidebar"> <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav"> <span
+                            class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu"> <span>
+                    <button type="button"
+                        class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div class="app-header__content">
+                <div class="app-header-left"></div>
+                <div class="app-header-right">
+                    <div class="header-dots">
+                        <div class="dropdown">
+                            <div tabindex="-1" role="menu" aria-hidden="true"
+                                class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
+                                <div class="dropdown-menu-header">
+                                    <div class="dropdown-menu-header-inner bg-premium-dark">
+                                        <div class="menu-header-image"
+                                            style="background-image: url('assets/images/dropdown-header/abstract4.jpg');">
+                                        </div>
+                                        <div class="menu-header-content text-white">
+                                            <h5 class="menu-header-title">Users Online</h5>
+                                            <h6 class="menu-header-subtitle">Recent Account Activity Overview</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-chart">
+                                    <div class="widget-chart-content">
+                                        <div class="icon-wrapper rounded-circle">
+                                            <div class="icon-wrapper-bg opacity-9 bg-focus"></div> <i
+                                                class="lnr-users text-white"></i>
+                                        </div>
+                                        <div class="widget-numbers"> <span>344k</span>
+                                        </div>
+                                        <div class="widget-subheading pt-2">Profile views since last login</div>
+                                        <div class="widget-description text-danger"> <span
+                                                class="pr-1"><span>176%</span></span> <i class="fa fa-arrow-left"></i>
+                                        </div>
+                                    </div>
+                                    <div class="widget-chart-wrapper">
+                                        <div id="dashboard-sparkline-carousel-3-pop"></div>
+                                    </div>
+                                </div>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item-divider mt-0 nav-item"></li>
+                                    <li class="nav-item-btn text-center nav-item">
+                                        <button class="btn-shine btn-wide btn-pill btn btn-warning btn-sm"> <i
+                                                class="fa fa-cog fa-spin mr-2"></i>View Details</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app-main">
+            <div class="app-sidebar sidebar-shadow">
+                <div class="app-header__logo">
+                    <div class="logo-src"></div>
+                    <div class="header__pane ml-auto">
+                        <div>
+                            <button type="button" class="hamburger close-sidebar-btn hamburger--elastic"
+                                data-class="closed-sidebar"> <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-header__mobile-menu">
+                    <div>
+                        <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav"> <span
+                                class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="app-header__menu"> <span>
+                        <button type="button"
+                            class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                            <span class="btn-icon-wrapper">
+                                <i class="fa fa-ellipsis-v fa-w-6"></i>
+                            </span>
+                        </button>
+                    </span>
+                </div>
+                <div class="scrollbar-sidebar">
+                    <div class="app-sidebar__inner">
+                        <ul class="vertical-nav-menu">
+                            <li class="mm-active">
+                                <a href="index.html"> <i class="metismenu-icon pe-7s-home"></i>Dashboards</a>
+                            </li>
+                            <li class="mm">
+                                <a href="claims-management.html"> <i class="metismenu-icon pe-7s-news-paper"></i>Claims
+                                    Mgmt.</a>
+                            </li>
+                            <li class="mm">
+                                <a href="cat-claims.html"> <i class="metismenu-icon pe-7s-culture"></i>CAT's</a>
+                            </li>
+                            <li class="mm">
+                                <a href="#"> <i class="metismenu-icon pe-7s-cash"></i>Expenses</a>
+                            </li>
+                            <li class="mm">
+                                <a href="#"> <i class="metismenu-icon pe-7s-user"></i>Accounts</a>
+                            </li>
+                            <li class="mm">
+                                <a href="#"> <i class="metismenu-icon pe-7s-cloud"></i>Data Warehouse</a>
+                            </li>
+                            <li class="mm">
+                                <a href="#"> <i class="metismenu-icon pe-7s-help1"></i>Help Center</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="app-main__outer">
+                <div class="app-main__inner">
+                    <div class="app-page-title app-page-title-simple">
+                        <div class="page-title-wrapper">
+                            <div class="page-title-heading top-headings summary-wd">
+                                <div>
+                                    <div class="page-title-head center-elem c-darkblue"> <span class="d-inline-block"><a
+                                                href="claims-management.html" class="c-bluelinking"><i
+                                                    class="ion-android-arrow-back"></i></a>&nbsp;&nbsp;Claims
+                                            Summary</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-btn-lg pr-0">
+                                <div class="widget-content p-0">
+                                    <div class="widget-content-wrapper">
+                                        <div class="widget-content-left  ml-3 mr-10 header-user-info">
+                                            <div class="widget-heading">Hi, Alex</div>
+                                            <div class="widget-subheading">P. Handler</div>
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="btn-group">
+                                                <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                                    class="p-0 btn"> <i
+                                                        class="fa fa-angle-down ml-2 opacity-8 custom-dd-icon"></i>
+                                                    <img width="42" class="rounded-circle ml-3"
+                                                        src="assets/images/avatars/1.jpg" alt="">
+                                                </a>
+                                                <div tabindex="-1" role="menu" aria-hidden="true"
+                                                    class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
+                                                    <div class="dropdown-menu-header">
+                                                        <div class="dropdown-menu-header-inner bg-info">
+                                                            <div class="menu-header-image opacity-2"
+                                                                style="background-image: url('assets/images/dropdown-header/city3.jpg');">
+                                                            </div>
+                                                            <div class="menu-header-content text-left">
+                                                                <div class="widget-content p-0">
+                                                                    <div class="widget-content-wrapper">
+                                                                        <div class="widget-content-left mr-3">
+                                                                            <img width="42" class="rounded-circle"
+                                                                                src="assets/images/avatars/1.jpg"
+                                                                                alt="">
+                                                                        </div>
+                                                                        <div class="widget-content-left">
+                                                                            <div class="widget-heading">Alina Mcloughlin
+                                                                            </div>
+                                                                            <div class="widget-subheading opacity-8">A
+                                                                                short profile description</div>
+                                                                        </div>
+                                                                        <div class="widget-content-right mr-2">
+                                                                            <button
+                                                                                class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="scroll-area-xs" style="height: 150px;">
+                                                        <div class="scrollbar-container ps">
+                                                            <ul class="nav flex-column">
+                                                                <li class="nav-item-header nav-item">Activity</li>
+                                                                <li class="nav-item"> <a href="javascript:void(0);"
+                                                                        class="nav-link">Chat
+                                                                        <div
+                                                                            class="ml-auto badge badge-pill badge-info">
+                                                                            8</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item"> <a href="javascript:void(0);"
+                                                                        class="nav-link">Recover Password</a>
+                                                                </li>
+                                                                <li class="nav-item-header nav-item">My Account</li>
+                                                                <li class="nav-item"> <a href="javascript:void(0);"
+                                                                        class="nav-link">Settings
+                                                                        <div class="ml-auto badge badge-success">New
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item"> <a href="javascript:void(0);"
+                                                                        class="nav-link">Messages
+                                                                        <div class="ml-auto badge badge-warning">512
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item"> <a href="javascript:void(0);"
+                                                                        class="nav-link">Logs</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item-divider mb-0 nav-item"></li>
+                                                    </ul>
+                                                    <div class="grid-menu grid-menu-2col">
+                                                        <div class="no-gutters row">
+                                                            <div class="col-sm-6">
+                                                                <button
+                                                                    class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-warning">
+                                                                    <i
+                                                                        class="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i>
+                                                                    Message Inbox</button>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <button
+                                                                    class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
+                                                                    <i
+                                                                        class="pe-7s-ticket icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
+                                                                    <b>Support Tickets</b>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item-divider nav-item"></li>
+                                                        <li class="nav-item-btn text-center nav-item">
+                                                            <button class="btn-wide btn btn-primary btn-sm">Open
+                                                                Messages</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <!-- Card 1 -->
+                            <div class="main-card mb-5 card border-25">
+                                <div class="card-body card-pad">
+                                    <div class="row">
+                                        <div class="col-md-12 p-0">
+                                            <div class="claim-info">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <ul class="ul-content">
+                                                            <li>JCG Ref No.</li>
+                                                            <li class="sub-li">
+                                                                <img src="assets/img/icons/icici.png" alt="Icici Bank"
+                                                                    class="img-fluid w-img" />951</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <ul class="ul-content">
+                                                            <li>Claim No.</li>
+                                                            <li class="sub-li">A12345</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <ul class="ul-content">
+                                                            <li>Policy No.</li>
+                                                            <li class="sub-li">123456789123</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <ul class="ul-content">
+                                                            <li>Claim Handler</li>
+                                                            <li class="sub-li">Self</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <ul class="ul-content">
+                                                            <li>Field Surveyor</li>
+                                                            <li class="sub-li">Krishna Iyer</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <ul class="ul-content">
+                                                            <li>Insured Name</li>
+                                                            <li class="sub-li">Lagoon Hotels & Resorts Ltd.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row pl-2 pr-2">
+                                                <div class="col-md-12 pt-4 pb-4">
+                                                    <div id="accordion" class="accordion-wrapper mb-3">
+                                                        <div class="card">
+                                                            <div id="headingOne" class="card-header">
+                                                                <button type="button" data-toggle="collapse"
+                                                                    data-target="#collapseOne1" aria-expanded="true"
+                                                                    aria-controls="collapseOne"
+                                                                    class="text-left m-0 p-0 btn btn-link btn-block">
+                                                                    <h5 class="m-0 p-0">Initial Loss Advice (ILA)</h5>
+                                                                </button>
+                                                            </div>
+                                                            <div data-parent="#accordion" id="collapseOne1"
+                                                                aria-labelledby="headingOne" class="collapse show">
+                                                                <div class="card-body height-scroller2 scrollbar"
+                                                                    id="style-2">
+                                                                    <form class="" autocomplete="off" id="disable">
+                                                                        <div class="col-md-12">
+                                                                            <h5>Basic Details</h5>
+                                                                            <div class="form-row sd-form">
+                                                                                <div class="col-md-6">
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <label for="date_loss">Date of
+                                                                                            Survey</label>
+                                                                                        <input name="date"
+                                                                                            placeholder="24 Oct 2020"
+                                                                                            type="text"
+                                                                                            class="form-control" disabled>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <label for="type_loss">Type of
+                                                                                            Loss</label>
+                                                                                        <input name="type_loss"
+                                                                                            placeholder="" type="text"
+                                                                                            class="form-control" disabled>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <label
+                                                                                            for="date_intimation">Cause
+                                                                                            of Loss</label>
+                                                                                        <input name="date"
+                                                                                            placeholder="Cyclone"
+                                                                                            type="text"
+                                                                                            class="form-control" disabled>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <label
+                                                                                            for="date_survey">Admissibility</label>
+                                                                                        <div>
+                                                                                            <select id="custom-inp-top"
+                                                                                                type="select"
+                                                                                                class="custom-select" disabled>
+                                                                                                <option>Yes</option>
+                                                                                                <option>No</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <label
+                                                                                            for="date_intimation">Occupancy</label>
+                                                                                        <textarea rows="4" name="date"
+                                                                                            placeholder="Cafes, Restaurants, Hotels, Confectioner &amp; Sweet Meat Sellers"
+                                                                                            type="text"
+                                                                                            class="form-control" disabled></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <label
+                                                                                            for="date_intimation">Clauses</label>
+                                                                                        <textarea rows="4" name="date"
+                                                                                            placeholder="Cafes, Restaurants, Hotels, Confectioner &amp; Sweet Meat Sellers"
+                                                                                            class="form-control address-scroll"
+                                                                                            type="text" disabled></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <label
+                                                                                            for="excess">Excess</label>
+                                                                                        <input name="excess" id="excess"
+                                                                                            placeholder="" type="text"
+                                                                                            class="form-control" disabled>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <label for="date_survey">On
+                                                                                            Account Recommended</label>
+                                                                                        <div>
+                                                                                            <select id="custom-inp-top"
+                                                                                                type="select"
+                                                                                                class="custom-select" disabled>
+                                                                                                <option>Select On
+                                                                                                    Account Recommended
+                                                                                                </option>
+                                                                                                <option>Account
+                                                                                                    Recommended</option>
+                                                                                                <option>Account
+                                                                                                    Recommended</option>
+                                                                                                <option>Account
+                                                                                                    Recommended</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <h5>Conclusion</h5>
+                                                                            <div class="form-row sd-form">
+                                                                                <div class="col-md-6">
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <label
+                                                                                            for="date_intimation">Observations</label>
+                                                                                        <textarea rows="4" name="date"
+                                                                                            placeholder="Enter here"
+                                                                                            type="text"
+                                                                                            class="form-control" disabled></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <label
+                                                                                            for="date_intimation">Further
+                                                                                            Course of Action</label>
+                                                                                        <textarea rows="4" name="date"
+                                                                                            placeholder="Enter here"
+                                                                                            type="text"
+                                                                                            class="form-control" disabled></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div id="headingTwo" class="b-radius-0 card-header">
+                                                                <button type="button" data-toggle="collapse"
+                                                                    data-target="#collapseOne2" aria-expanded="false"
+                                                                    aria-controls="collapseTwo"
+                                                                    class="text-left m-0 p-0 btn btn-link btn-block">
+                                                                    <h5 class="m-0 p-0">Letter of Requirement (LOR)</h5>
+                                                                </button>
+                                                            </div>
+                                                            <div data-parent="#accordion" id="collapseOne2"
+                                                                class="collapse">
+                                                                <div class="card-body">
+                                                                    <form class="" autocomplete="off">
+                                                                        <div class="form-row">
+                                                                            <div class="col-md-12 text-left">
+                                                                                <h5>Shortlist checklist as per Claim
+                                                                                    Type</h3>
+                                                                                    <ul
+                                                                                        class="todo-list-wrapper list-group list-group-flush">
+                                                                                        <li
+                                                                                            class="list-group-item pl-0">
+                                                                                            <div
+                                                                                                class="widget-content p-0">
+                                                                                                <div
+                                                                                                    class="widget-content-wrapper">
+                                                                                                    <div
+                                                                                                        class="widget-content-left">
+                                                                                                        <div
+                                                                                                            class="custom-checkbox custom-control pl-0">
+                                                                                                            <label
+                                                                                                                class="container-check">
+                                                                                                                <input
+                                                                                                                    type="checkbox"
+                                                                                                                    checked="checked" disabled>
+                                                                                                                <span
+                                                                                                                    class="checkmark"></span>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="widget-content-left flex2 text-left">
+                                                                                                        <div
+                                                                                                            class="widget-heading">
+                                                                                                            Copy of
+                                                                                                            address
+                                                                                                            proof
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="widget-content-right  mr-3">
+                                                                                                        <a href=""> <img
+                                                                                                                src="assets/img/icons/view-icon.svg"
+                                                                                                                alt=""></a>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="widget-content-right">
+                                                                                                        <a href=""> <img
+                                                                                                                src="assets/img/icons/upload-icon.svg"
+                                                                                                                alt=""></a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </li>
+
+                                                                                        <li
+                                                                                            class="list-group-item pl-0">
+                                                                                            <div
+                                                                                                class="widget-content p-0">
+                                                                                                <div
+                                                                                                    class="widget-content-wrapper">
+                                                                                                    <div
+                                                                                                        class="widget-content-left">
+                                                                                                        <div
+                                                                                                            class="custom-checkbox custom-control pl-0">
+                                                                                                            <label
+                                                                                                                class="container-check">
+                                                                                                                <input
+                                                                                                                    type="checkbox" disabled>
+                                                                                                                <span
+                                                                                                                    class="checkmark"></span>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="widget-content-left flex2 text-left">
+                                                                                                        <div
+                                                                                                            class="widget-heading">
+                                                                                                            Layout Plan
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="widget-content-right mr-3">
+                                                                                                        <a href=""> <img
+                                                                                                                src="assets/img/icons/view-icon.svg"
+                                                                                                                alt=""></a>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="widget-content-right">
+                                                                                                        <a href=""> <img
+                                                                                                                src="assets/img/icons/upload-icon.svg"
+                                                                                                                alt=""></a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </li>
+
+                                                                                        <li
+                                                                                            class="list-group-item pl-0">
+                                                                                            <div
+                                                                                                class="widget-content p-0">
+                                                                                                <div
+                                                                                                    class="widget-content-wrapper">
+                                                                                                    <div
+                                                                                                        class="widget-content-left">
+                                                                                                        <div
+                                                                                                            class="custom-checkbox custom-control pl-0">
+                                                                                                            <label
+                                                                                                                class="container-check">
+                                                                                                                <input
+                                                                                                                    type="checkbox" disabled>
+                                                                                                                <span
+                                                                                                                    class="checkmark"></span>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="widget-content-left flex2 text-left">
+                                                                                                        <div
+                                                                                                            class="widget-heading">
+                                                                                                            Copy of
+                                                                                                            valuation
+                                                                                                            report
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="widget-content-right mr-3">
+                                                                                                        <a href=""> <img
+                                                                                                                src="assets/img/icons/view-icon.svg"
+                                                                                                                alt=""></a>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="widget-content-right">
+                                                                                                        <a href=""> <img
+                                                                                                                src="assets/img/icons/upload-icon.svg"
+                                                                                                                alt=""></a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </li>
+
+                                                                                        <li
+                                                                                            class="list-group-item pl-0">
+                                                                                            <div
+                                                                                                class="widget-content p-0">
+                                                                                                <div
+                                                                                                    class="widget-content-wrapper">
+                                                                                                    <div
+                                                                                                        class="widget-content-left">
+                                                                                                        <div
+                                                                                                            class="custom-checkbox custom-control pl-0">
+                                                                                                            <label
+                                                                                                                class="container-check">
+                                                                                                                <input
+                                                                                                                    type="checkbox" disabled>
+                                                                                                                <span
+                                                                                                                    class="checkmark"></span>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="widget-content-left flex2 text-left">
+                                                                                                        <div
+                                                                                                            class="widget-heading">
+                                                                                                            BOQ
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="widget-content-right mr-3">
+                                                                                                        <a href=""> <img
+                                                                                                                src="assets/img/icons/view-icon.svg"
+                                                                                                                alt=""></a>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="widget-content-right">
+                                                                                                        <a href=""> <img
+                                                                                                                src="assets/img/icons/upload-icon.svg"
+                                                                                                                alt=""></a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </li>
+
+                                                                                        <li
+                                                                                            class="list-group-item pl-0">
+                                                                                            <div
+                                                                                                class="widget-content p-0">
+                                                                                                <div
+                                                                                                    class="widget-content-wrapper">
+                                                                                                    <div
+                                                                                                        class="widget-content-left">
+                                                                                                        <div
+                                                                                                            class="custom-checkbox custom-control pl-0">
+                                                                                                            <label
+                                                                                                                class="container-check">
+                                                                                                                <input
+                                                                                                                    type="checkbox" disabled>
+                                                                                                                <span
+                                                                                                                    class="checkmark"></span>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="widget-content-left flex2 text-left">
+                                                                                                        <div
+                                                                                                            class="widget-heading">
+                                                                                                            Copy of
+                                                                                                            Balance
+                                                                                                            Sheet
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="widget-content-right mr-3">
+                                                                                                        <a href=""> <img
+                                                                                                                src="assets/img/icons/view-icon.svg"
+                                                                                                                alt=""></a>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="widget-content-right">
+                                                                                                        <a href=""> <img
+                                                                                                                src="assets/img/icons/upload-icon.svg"
+                                                                                                                alt=""></a>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                            </div>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <div
+                                                                                        class="col-md-6 text-left mt-3">
+                                                                                        <ul class="ul-content">
+                                                                                            <li class="recommended">'On
+                                                                                                Account' Recommended?
+                                                                                            </li>
+                                                                                            <div
+                                                                                                class="position-relative form-group">
+                                                                                                <select name="select"
+                                                                                                    id="account_recommend"
+                                                                                                    class="form-control fc-custom" disabled>
+                                                                                                    <option selected="">
+                                                                                                        Select here
+                                                                                                    </option>
+                                                                                                    <option>Type 1
+                                                                                                    </option>
+                                                                                                    <option>Type 2
+                                                                                                    </option>
+                                                                                                    <option>Type 3
+                                                                                                    </option>
+                                                                                                    <option>Type 4
+                                                                                                    </option>
+                                                                                                    <option>Type 5
+                                                                                                    </option>
+                                                                                                </select>
+                                                                                            </div>
+                                                                                        </ul>
+                                                                                    </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div id="headingThree" class="card-header">
+                                                                <button type="button" data-toggle="collapse"
+                                                                    data-target="#collapseOne3" aria-expanded="false"
+                                                                    aria-controls="collapseThree"
+                                                                    class="text-left m-0 p-0 btn btn-link btn-block">
+                                                                    <h5 class="m-0 p-0">Interim Report</h5>
+                                                                </button>
+                                                            </div>
+                                                            <div data-parent="#accordion" id="collapseOne3"
+                                                                class="collapse">
+                                                                <div class="card-body height-scroller2 scrollbar mb-0"
+                                                                    id="style-3">
+                                                                    <form class="" autocomplete="off">
+                                                                        <div class="form-row">
+                                                                            <div class="col-md-12">
+                                                                                <h5>The Preamble</h3>
+                                                                                    <p>Pursuant to the intimation
+                                                                                        received from your office on
+                                                                                        XX/XX/20XX to carry out the
+                                                                                        survey of the said loss located
+                                                                                        at
+                                                                                        <span class="hide"></span><input
+                                                                                            id="txt" type="text"
+                                                                                            disabled>
+                                                                                        , we contacted the Insured and
+                                                                                        visited the site on XX/XX/20XX
+                                                                                        for initial survey to verify the
+                                                                                        damages.
+                                                                                    </p>
+                                                                                    <p>The claim pertains to damages to
+                                                                                        the Insured’s
+                                                                                        <span class="hide"></span><input
+                                                                                            id="txt" type="text"
+                                                                                            disabled>
+                                                                                        due to <span
+                                                                                            class="hide"></span><input
+                                                                                            id="txt" type="text"
+                                                                                            disabled> on XX/XX/20XX at
+                                                                                        the Insured’s premises.
+                                                                                    </p>
+                                                                                    <p>During our survey, discussions
+                                                                                        were held with the concerned
+                                                                                        officials, necessary documents/
+                                                                                        data were procured &amp; the
+                                                                                        damages were physically verified
+                                                                                        and photographs arranged. </p>
+                                                                                    <p>Based on our physical inspection
+                                                                                        and the available documents /
+                                                                                        information received from the
+                                                                                        Insured till date, we hereby
+                                                                                        submit our Initial Loss Advice,
+                                                                                        without prejudice, as under:</p>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h5>Circumstances & Cause of Loss</h3>
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <p>During our visit, we carried
+                                                                                            out physical inspection of
+                                                                                            the premises jointly with
+                                                                                            the Insured’s
+                                                                                            representatives and noted
+                                                                                            down the damages upto a
+                                                                                            possible extent.</p>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h5>Nature & Extent Of Damages</h3>
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <textarea name="nature_damage"
+                                                                                            id="nature_damage"
+                                                                                            class="form-control"
+                                                                                            placeholder="" disabled></textarea>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h5>Further Action</h3>
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <textarea name="nature_damage"
+                                                                                            id="nature_damage"
+                                                                                            class="form-control"
+                                                                                            placeholder="" disabled></textarea>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h5>Loss Reserve</h3>
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <p>Insured has provided us
+                                                                                            initial estimates of loss
+                                                                                            amointing to INR
+                                                                                            <span
+                                                                                                class="hide"></span><input
+                                                                                                id="txt" type="text"
+                                                                                                disabled>
+                                                                                            . The insurers are requested
+                                                                                            to maintain a reserve of INR
+                                                                                            <span
+                                                                                                class="hide"></span><input
+                                                                                                id="txt" type="text"
+                                                                                                disabled> (after
+                                                                                            considering salvage and
+                                                                                            excess) for the captioned
+                                                                                            claim. the loss reserve is
+                                                                                            subjected to revision after
+                                                                                            receiving the required
+                                                                                            documents from the insured.
+                                                                                        </p>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h5>Policy Liability</h3>
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <textarea name="nature_damage"
+                                                                                            id="nature_damage"
+                                                                                            class="form-control"
+                                                                                            placeholder="" disabled></textarea>
+                                                                                    </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div id="headingFour" class="card-header">
+                                                                <button type="button" data-toggle="collapse"
+                                                                    data-target="#collapseOne4" aria-expanded="false"
+                                                                    aria-controls="headingFour"
+                                                                    class="text-left m-0 p-0 btn btn-link btn-block">
+                                                                    <h5 class="m-0 p-0">Final Survey Report (FSR)</h5>
+                                                                </button>
+                                                            </div>
+                                                            <div data-parent="#accordion" id="collapseOne4"
+                                                                class="collapse">
+                                                                <div class="card-body height-scroller2 scrollbar mb-0"
+                                                                    id="style-4">
+                                                                    <form class="" autocomplete="off">
+                                                                        <div class="form-row">
+                                                                            <div class="col-md-12">
+                                                                                <h5>The Preamble</h3>
+                                                                                    <p>Pursuant to the intimation
+                                                                                        received from your office on
+                                                                                        XX/XX/20XX to carry out the
+                                                                                        survey of the said loss located
+                                                                                        at
+                                                                                        <span class="hide"></span><input
+                                                                                            id="txt" type="text"
+                                                                                            disabled>
+                                                                                        , we contacted the Insured and
+                                                                                        visited the site on XX/XX/20XX
+                                                                                        for initial survey to verify the
+                                                                                        damages.
+                                                                                    </p>
+                                                                                    <p>The claim pertains to damages to
+                                                                                        the Insured’s
+                                                                                        <span class="hide"></span><input
+                                                                                            id="txt" type="text"
+                                                                                            disabled>
+                                                                                        due to <span
+                                                                                            class="hide"></span><input
+                                                                                            id="txt" type="text"
+                                                                                            disabled> on XX/XX/20XX at
+                                                                                        the Insured’s premises.
+                                                                                    </p>
+                                                                                    <p>During our survey, discussions
+                                                                                        were held with the concerned
+                                                                                        officials, necessary documents/
+                                                                                        data were procured &amp; the
+                                                                                        damages were physically verified
+                                                                                        and photographs arranged. </p>
+                                                                                    <p>Subsequently, based on our
+                                                                                        initial observations, we had
+                                                                                        recommended to keep provision of
+                                                                                        INR XX,XX,XXX/- in the subject
+                                                                                        matter vide mail dated
+                                                                                        XX/XX/20XX.</p>
+                                                                                    <p>Now, based on our survey and
+                                                                                        verification of the records /
+                                                                                        documents made available by the
+                                                                                        Insured, we hereby submit our
+                                                                                        Final Survey Report “Without
+                                                                                        Prejudice”, as under:</p>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h5>Insurance Particulars</h3>
+                                                                                    <div class="form-row">
+                                                                                        <div class="col-md-6">
+                                                                                            <div
+                                                                                                class="position-relative form-group">
+                                                                                                <label
+                                                                                                    for="the_insurers"
+                                                                                                    class="">The
+                                                                                                    Insurers</label>
+                                                                                                <input
+                                                                                                    name="the_insurers"
+                                                                                                    id="the_insurers"
+                                                                                                    type="text"
+                                                                                                    class="form-control" disabled>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-6">
+                                                                                            <div
+                                                                                                class="position-relative form-group">
+                                                                                                <label for="per_policy"
+                                                                                                    class="">The Insured
+                                                                                                    as per
+                                                                                                    Policy</label>
+                                                                                                <input name="per_policy"
+                                                                                                    id="per_policy"
+                                                                                                    type="text"
+                                                                                                    class="form-control" disabled>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-6">
+                                                                                            <div
+                                                                                                class="position-relative form-group">
+                                                                                                <label for="policy_no"
+                                                                                                    class="">Policy
+                                                                                                    No.</label>
+                                                                                                <input name="policy_no"
+                                                                                                    id="policy_no"
+                                                                                                    type="text"
+                                                                                                    class="form-control" disabled>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-6">
+                                                                                            <div
+                                                                                                class="position-relative form-group">
+                                                                                                <label for="type_policy"
+                                                                                                    class="">Type of
+                                                                                                    Policy</label>
+                                                                                                <input
+                                                                                                    name="type_policy"
+                                                                                                    id="type_policy"
+                                                                                                    type="text"
+                                                                                                    class="form-control" disabled>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-6">
+                                                                                            <div
+                                                                                                class="position-relative form-group">
+                                                                                                <label
+                                                                                                    for="policy_period"
+                                                                                                    class="">Policy
+                                                                                                    Period</label>
+                                                                                                <input
+                                                                                                    name="policy_period"
+                                                                                                    id="policy_period"
+                                                                                                    type="text"
+                                                                                                    class="form-control" disabled>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-6">
+                                                                                            <div
+                                                                                                class="position-relative form-group">
+                                                                                                <label for="occupancy"
+                                                                                                    class="">Occupancy</label>
+                                                                                                <input name="occupancy"
+                                                                                                    id="occupancy"
+                                                                                                    type="text"
+                                                                                                    class="form-control" disabled>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-6">
+                                                                                            <div
+                                                                                                class="position-relative form-group">
+                                                                                                <label
+                                                                                                    for="loss_location"
+                                                                                                    class="">Loss
+                                                                                                    Location</label>
+                                                                                                <input
+                                                                                                    name="loss_location"
+                                                                                                    id="loss_location"
+                                                                                                    type="text"
+                                                                                                    class="form-control" disabled>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-6">
+                                                                                            <div
+                                                                                                class="position-relative form-group">
+                                                                                                <label for="total_sum"
+                                                                                                    class="">Total Sum
+                                                                                                    insured</label>
+                                                                                                <input name="total_sum"
+                                                                                                    id="total_sum"
+                                                                                                    type="text"
+                                                                                                    class="form-control" disabled>
+                                                                                                <span
+                                                                                                    class="inr">INR</span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-6">
+                                                                                            <div
+                                                                                                class="position-relative form-group">
+                                                                                                <label for="addon_cover"
+                                                                                                    class="">Add-On
+                                                                                                    Covers</label>
+                                                                                                <input
+                                                                                                    name="addon_cover"
+                                                                                                    id="addon_cover"
+                                                                                                    type="text"
+                                                                                                    class="form-control" disabled>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-6">
+                                                                                            <div
+                                                                                                class="position-relative form-group">
+                                                                                                <label
+                                                                                                    for="clauses_warranties"
+                                                                                                    class="">Clauses/
+                                                                                                    Warranties</label>
+                                                                                                <input
+                                                                                                    name="clauses_warranties"
+                                                                                                    id="clauses_warranties"
+                                                                                                    type="text"
+                                                                                                    class="form-control" disabled>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-6">
+                                                                                            <div
+                                                                                                class="position-relative form-group">
+                                                                                                <label for="excess"
+                                                                                                    class="">Excess</label>
+                                                                                                <input name="excess"
+                                                                                                    id="excess"
+                                                                                                    type="text"
+                                                                                                    class="form-control" disabled>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-6">
+                                                                                            <div
+                                                                                                class="position-relative form-group">
+                                                                                                <label
+                                                                                                    for="hypothecation"
+                                                                                                    class="">Hypothecation</label>
+                                                                                                <input
+                                                                                                    name="hypothecation"
+                                                                                                    id="hypothecation"
+                                                                                                    type="text"
+                                                                                                    class="form-control" disabled>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h5>About The Insured</h3>
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <textarea name="nature_damage"
+                                                                                            id="nature_damage"
+                                                                                            class="form-control"
+                                                                                            placeholder="" disabled></textarea>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h5>Circumstances & Cause of Loss</h3>
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <textarea name="nature_damage"
+                                                                                            id="nature_damage"
+                                                                                            class="form-control"
+                                                                                            placeholder="" disabled></textarea>
+                                                                                    </div>
+                                                                            </div>
+
+                                                                            <div class="col-md-12">
+                                                                                <h5>Insured’s Claim</h3>
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <textarea name="nature_damage"
+                                                                                            id="nature_damage"
+                                                                                            class="form-control"
+                                                                                            placeholder="" disabled></textarea>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h5>Our Observations & Verifications
+                                                                                    </h3>
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <textarea name="nature_damage"
+                                                                                            id="nature_damage"
+                                                                                            class="form-control"
+                                                                                            placeholder="" disabled></textarea>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h5>Depreciation</h3>
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <textarea name="nature_damage"
+                                                                                            id="nature_damage"
+                                                                                            class="form-control"
+                                                                                            placeholder="" disabled></textarea>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h5>Salvage</h3>
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <textarea name="nature_damage"
+                                                                                            id="nature_damage"
+                                                                                            class="form-control"
+                                                                                            placeholder="" disabled></textarea>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h5>Policy Review</h3>
+                                                                                    <div class="form-row">
+                                                                                        <div class="col-md-6">
+                                                                                            <div
+                                                                                                class="position-relative form-group">
+                                                                                                <label for="coverage"
+                                                                                                    class="">Coverage</label>
+                                                                                                <input name="coverage"
+                                                                                                    id="coverage"
+                                                                                                    type="text"
+                                                                                                    class="form-control" disabled>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-6">
+                                                                                            <div
+                                                                                                class="position-relative form-group">
+                                                                                                <label for="excess"
+                                                                                                    class="">Excess</label>
+                                                                                                <input name="excess"
+                                                                                                    id="excess"
+                                                                                                    type="text"
+                                                                                                    class="form-control" disabled>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-6">
+                                                                                            <div
+                                                                                                class="position-relative form-group">
+                                                                                                <label
+                                                                                                    for="adequacy_sume"
+                                                                                                    class="">Adequacy of
+                                                                                                    Sum Insured:</label>
+                                                                                                <input
+                                                                                                    name="adequacy_sume"
+                                                                                                    id="adequacy_sume"
+                                                                                                    type="text"
+                                                                                                    class="form-control" disabled>
+                                                                                                <span
+                                                                                                    class="inr">INR</span>
+
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h5>Salvage</h3>
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <textarea name="nature_damage"
+                                                                                            id="nature_damage"
+                                                                                            class="form-control"
+                                                                                            placeholder="" disabled></textarea>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h5>Assessment Of Loss</h3>
+                                                                                    <div class="position-relative form-group">
+                                                                                        <p>Based on our observations and verifications, the loss under each head has been assessed as follows:</p>
+                                                                                      </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h5>Other Insurances & Contribution</h3>
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <textarea name="nature_damage"
+                                                                                            id="nature_damage"
+                                                                                            class="form-control"
+                                                                                            placeholder="" disabled></textarea>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h5>Third Party Aspect/subrogation</h3>
+                                                                                    <div
+                                                                                        class="position-relative form-group">
+                                                                                        <textarea name="nature_damage"
+                                                                                            id="nature_damage"
+                                                                                            class="form-control"
+                                                                                            placeholder="" disabled></textarea>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h5>Concluding Remarks</h3>
+                                                                                    <div class="position-relative form-group">
+                                                                                        <p>We commend this report to Insurers with a recommendation to agree settlement of the claim at INR X,XX,XX,XXX/- net of adjustments and deductibles. </p>
+                                                                                        <p>Photographs arranged by us have been attached along with the report.</p>
+                                                                                        <p>No Breach of Warranty was observed by us. The loss is admissible as per the terms &amp; conditions of the policy.</p>
+                                                                                        <p>The Insured have provided consent on the above assessment vide their email dated XX.XX.20XX. Copy of their email has been annexed along with the report.</p>
+                                                                                        <p>This report concludes our involvement in this matter, and we attach the relevant paperwork for Insurers attention.  </p>
+                                            
+                                                                                      </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <!-- Card 1 -->
+                            <div class="main-card mb-5 card border-25">
+                                <div class="card-body card-pad">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="row pl-2 pr-2">
+                                                <div class="col-md-12 mb-3 d-flex mt-4">
+                                                    <div class="col-md-8 text-left pl-0">
+                                                        <p class="mt-3 "><b>Claim Remarks</b></p>
+                                                    </div>
+                                                    <div class="col-md-4 text-right pr-0">
+                                                        <a href="#"><i
+                                                                class="pe-7s-refresh-2 mt-3  font-size-xlg c-darkblack"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="height-scroller scrollbar" id="style-1">
+                                                <!-- Chat 1 -->
+                                                <div class="row pl-2 pr-2 mb-3">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="col-md-6 text-left pl-0">
+                                                            <p> <b>Yash Galiya</b></p>
+                                                        </div>
+                                                        <div class="col-md-6 text-right pr-0 pl-0">
+                                                            <p class="c-grey">03/07/20 02:30 PM</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <p class="chat-content">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                                            et dolore</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Chat 2 -->
+                                                <div class="row pl-2 pr-2 mb-3">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="col-md-6 text-left pl-0">
+                                                            <p> <b>Sushmita Gavale</b></p>
+                                                        </div>
+                                                        <div class="col-md-6 text-right pr-0 pl-0">
+                                                            <p class="c-grey">03/07/20 04:00 PM</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <p class="chat-content">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                                            et dolore</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Chat 3 -->
+                                                <div class="row pl-2 pr-2 mb-3">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="col-md-6 text-left pl-0">
+                                                            <p> <b>Yash Galiya</b></p>
+                                                        </div>
+                                                        <div class="col-md-6 text-right pr-0 pl-0">
+                                                            <p class="c-grey">03/07/20 02:30 PM</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <p class="chat-content">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                                            et dolore</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- Add Remark -->
+                                            <div class="row mb-5">
+                                                <div class="col-md-12 pl-4 pr-4">
+                                                    <input type="text" name="add_remark" id="add_remark"
+                                                        class="w-100 form-control custom-input"
+                                                        placeholder="Add Remark">
+                                                    <span class="send-message"><a href="#"> <i
+                                                                class="pe-7s-paper-plane"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app-drawer-wrapper">
+        <!-- <div class="drawer-nav-btn">
+            <button type="button" class="hamburger hamburger--elastic is-active">
+                <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+            </button>
+        </div> -->
+        <div class="drawer-content-wrapper ">
+            <div class="scrollbar-container">
+                <div class="drawer-section">
+                    <div class="row">
+                        <div class="col-7">
+                            <h5 class="c-darkblue"><i class="ion-android-arrow-back"></i>&nbsp;&nbsp;&nbsp;Notifications
+                            </h5>
+                        </div>
+                        <div class="col-5 notification-alert"> <span>02 Notifications</span>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <h5 class="text-left card-title"><b>Today</b> </h5>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="notify-box p-0 mb-4">
+                                    <div class="row">
+                                        <div class="col-md-12 d-flex pl-0">
+                                            <div class="col-md-2"> <span class="ml-2"><img
+                                                        src="assets/img/icons/icici.png" alt="Icici Bank"
+                                                        class="img-fluid"> </span>
+                                            </div>
+                                            <div class="col-md-10 pl-0">
+                                                <p class="mb-2"><strong> Krishna Iyer</strong> accepted your claim
+                                                    request for <strong>JCG Ref. No. 0591.</strong>
+                                                </p>
+                                                <p class="mb-2 c-darkgrey font15"><i class="ion-android-calendar"></i>
+                                                    28-10-2020</p>
+                                                <p class="c-darkgrey font15 mb-2"><i class="lnr-map-marker "></i>
+                                                    Andheri East, Mumbai - 400012</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notify-box p-0">
+                                    <div class="row">
+                                        <div class="col-md-12 d-flex pl-0">
+                                            <div class="col-md-2"> <span class="ml-2"><img
+                                                        src="assets/img/icons/sbi.png" alt="Sbi Bank" class="img-fluid">
+                                                </span>
+                                            </div>
+                                            <div class="col-md-10 pl-0">
+                                                <p class="mb-2"><strong> Rupesh Tayde</strong> sent you a claim request
+                                                    <strong>JCG Ref. No. 4201.</strong>
+                                                </p>
+                                                <p class="mb-2 c-darkgrey font15"><i class="ion-android-calendar"></i>
+                                                    27-10-2020</p>
+                                                <p class="c-darkgrey font15 mb-3"><i class="lnr-map-marker "></i>
+                                                    Andheri East, Mumbai - 400012</p>
+                                                <button
+                                                    class="mb-2 mr-2 btn-pill btn-transition btn btn-outline-danger">Reject</button>
+                                                <button
+                                                    class="mb-2 mr-2 btn-pill btn-transition btn btn-outline-success">Accept</button>
+                                                <button
+                                                    class="mb-2 mr-2 btn-icon btn-icon-only btn-pill btn btn-outline-secondary"><i
+                                                        class="pe-7s-paper-plane btn-icon-wrapper"> </i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="text-left card-title mt-4"><b>Yesterday</b> </h5>
+                                    <div class="notify-box p-0">
+                                        <div class="row">
+                                            <div class="col-md-12 d-flex pl-0">
+                                                <div class="col-md-2"> <span class="ml-2"><img
+                                                            src="assets/img/icons/sbi.png" alt="Sbi Bank"
+                                                            class="img-fluid"> </span>
+                                                </div>
+                                                <div class="col-md-10 pl-0">
+                                                    <p class="mb-2"><strong> Rupesh Tayde</strong> sent you a claim
+                                                        request <strong>JCG Ref. No. 5460.</strong>
+                                                    </p>
+                                                    <p class="mb-2 c-darkgrey font15"><i
+                                                            class="ion-android-calendar"></i> 27-10-2020</p>
+                                                    <p class="c-darkgrey font15 mb-3"><i class="lnr-map-marker "></i>
+                                                        Andheri East, Mumbai - 400012</p>
+                                                    <button
+                                                        class="mb-2 mr-2 btn-pill btn-transition btn btn-outline-danger">Reject</button>
+                                                    <button
+                                                        class="mb-2 mr-2 btn-pill btn-transition btn btn-outline-success">Accept</button>
+                                                    <button
+                                                        class="mb-2 mr-2 btn-icon btn-icon-only btn-pill btn btn-outline-secondary"><i
+                                                            class="pe-7s-paper-plane btn-icon-wrapper"> </i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="text-left card-title mt-4"><b>24 Oct, 2020</b> </h5>
+                                    <div class="notify-box p-0">
+                                        <div class="row">
+                                            <div class="col-md-12 d-flex pl-0">
+                                                <div class="col-md-2"> <span class="ml-2"><img
+                                                            src="assets/img/icons/sbi.png" alt="Sbi Bank"
+                                                            class="img-fluid"> </span>
+                                                </div>
+                                                <div class="col-md-10 pl-0">
+                                                    <p class="mb-2">Your expense request of <strong> ₹ 1500/-</strong>
+                                                        for <strong>JCG Ref.No. 4516</strong> has been accepted.</p>
+                                                    <p class="mb-2 c-darkgrey font15"><i
+                                                            class="ion-android-calendar"></i> 20-10-2020</p>
+                                                    <p class="c-darkgrey font15 mb-3"><i class="lnr-map-marker "></i>
+                                                        Andheri East, Mumbai - 400012</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app-drawer-overlay d-none animated fadeIn"></div>
+    <script type="text/javascript" src="assets/scripts/main.d810cf0ae7f39f28f336.js"></script>
+</body>
+
+</html>

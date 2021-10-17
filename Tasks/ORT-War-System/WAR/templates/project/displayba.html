@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="content">
+    <div class="row">
+      <!-- left column -->
+      <div class="column">
+        <!-- general form elements -->
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <h3 class="box-title">Display BA Detail</h3>
+          </div>
+          <!-- /.box-header -->
+          <!-- form start -->
+          <form role="form">
+            <div class="box-body">
+              <div class="form-group">
+               
+               <label for="balist" id="dept" size="50">Select BA</label> <br>
+               <select name="ba" id="baname" disabled size=" "><br>
+               <option value="ba" size="50" >All</option>
+               <option value="ba1" size="30">BA 1</option>
+               <option value="ba2" size="30">BA 2</option>
+               </select> <br>
+              </select>
+              </div>
+
+              <table id="example2" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th>ProjectCode</th>
+                  <th>ProjectName</th>
+                  <th>ClientName</th>
+                  <th>StartDate</th>
+                  <th>TargetDate</th>
+                  <th>BA</th>
+                  <th>Department</th>
+                  <th>ProjectHead</th>
+                  <th>TeamMember</th>
+                  <th>Status</th>
+                  <th>View</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Trident</td>
+                  <td> </td>
+                  <td>Win 95+</td>
+                  <td> 4</td>
+                  <td>X</td>
+                </tr>
+                              
+                </tfoot>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+  
+{% endblock %}

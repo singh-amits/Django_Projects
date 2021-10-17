@@ -1,0 +1,15 @@
+oneanswer/migrations/
+mcq/migrations/
+quiz/migrations/
+quiz/__pycache__/
+oneanswer/__pycache__/
+mcq/__pycache__/
+QuizApp/__pycache__/
+userauth/__pycache__/
+userauth/migrations/
+db.sqlite3
+rest_frontend/
+mcq/
+oneanswer/quiz/__pycache__/
+api/__pycache__/
+quiz/migrations/

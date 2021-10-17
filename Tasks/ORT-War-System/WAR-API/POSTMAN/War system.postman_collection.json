@@ -1,0 +1,371 @@
+{
+	"info": {
+		"_postman_id": "ff9ba0a3-e1dc-4709-91d8-e721b8504af3",
+		"name": "War system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Users - User list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "Sayali",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/users/api/login?email=nidhi@gmail.com&password=123",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"users",
+								"api",
+								"login"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "nidhi@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "123"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token cf5672df6050286424f554a9bc9da7d54bf834a3",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Username",
+									"value": "Sayali",
+									"type": "text"
+								},
+								{
+									"key": "Fullname",
+									"value": "sayali sundarajan",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "Address",
+									"value": "Klayan",
+									"type": "text"
+								},
+								{
+									"key": "Gender",
+									"value": "F",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sayali@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "DesignationId",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "Photo",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "RoleID",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "DepartmentID",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "Phone",
+									"value": "9876787678",
+									"type": "text"
+								},
+								{
+									"key": "FirebaseID",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "CreatedBy",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "is_staff",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "is_superuser",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "is_active",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "is_admin",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/users/api/adduser",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"users",
+								"api",
+								"adduser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token cf5672df6050286424f554a9bc9da7d54bf834a3",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\": \"Sandeep\",\r\n    \"Fullname\": \"Sandeep Hooda\",\r\n    \"Address\": null,\r\n    \"Gender\": \"M\",\r\n    \"email\": \"sandeep@gmail.com\",\r\n    \"DesignationId\": 1,\r\n    \"Photo\": null,\r\n    \"RoleID\": 4,\r\n    \"DepartmentID\": 2,\r\n    \"password\":\"123\",   \r\n    \"Phone\": null,\r\n    \"FirebaseID\": null,\r\n    \"CreatedBy\": 2,\r\n    \"CreatedOn\": \"2021-05-07T12:09:31.796531Z\",\r\n    \"UpdatedBy\": null,\r\n    \"UpdatedOn\": \"2021-05-07T12:09:31.796531Z\",\r\n    \"is_staff\": false,\r\n    \"is_superuser\": false,\r\n    \"is_active\": true,\r\n    \"is_admin\": true    \r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/users/api/userupdate?userID=14",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"users",
+								"api",
+								"userupdate"
+							],
+							"query": [
+								{
+									"key": "userID",
+									"value": "14"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "All API related to users"
+		},
+		{
+			"name": "Department",
+			"item": [
+				{
+					"name": "Department - Department list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token cf5672df6050286424f554a9bc9da7d54bf834a3",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/department/api/departmentlist",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"department",
+								"api",
+								"departmentlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Department",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete department",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token cf5672df6050286424f554a9bc9da7d54bf834a3",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "DepartmentName",
+									"value": ".NET",
+									"type": "text"
+								},
+								{
+									"key": "Active",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/department/api/updatedepartment?departmentID=3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"department",
+								"api",
+								"updatedepartment"
+							],
+							"query": [
+								{
+									"key": "departmentID",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Department",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "API related to department"
+		}
+	]
+}

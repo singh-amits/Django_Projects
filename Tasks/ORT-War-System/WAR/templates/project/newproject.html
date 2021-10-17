@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="content">
+    <div class="row">
+      <!-- left column -->
+      <div class=" ">
+        <!-- general form elements -->
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <h3 class="box-title">New Project</h3>
+          </div>
+          <!-- /.box-header -->
+          <!-- form start -->
+          <form role="form">
+            <div class="box-body">
+              <div class="form-group">
+                <label for="departmentname">Project Code</label><br>
+                <input type="text" class="form-group" id="departmentname" placeholder=""><br>
+                <label for="departmenthead">Project Name</label><br>
+                <input type="text" class="form-group" id="departmenthead" placeholder=""><br>
+                <label for="departmenthead">Client Name</label><br>
+                <input type="text" class="form-group" id="departmenthead" placeholder=""><br>
+                <label for="departmenthead">Start Date</label><br>
+                <input type="text" class="form-group" id="departmenthead" placeholder=""><br>
+                <label for="departmenthead">Target Date</label><br>
+                <input type="text" class="form-group" id="departmenthead" placeholder=""><br>
+
+              
+                <label for="teammember">Team Member:</label><br>
+                <input type="checkbox" id="employee1" name="employee" value="EmpA">
+                <label for="employee1"> EMP A</label><br>
+                <input type="checkbox" id="employee2" name="employee2" value="EmpB">
+                <label for="employee2"> EMP B</label><br>
+                <input type="checkbox" id="employee3" name="employee3" value="EmpC">
+                <label for="employee3"> EMP C</label><br><br> 
+              
+                <label for="employee">Business Analyst</label><br>
+                <select name=" " type="text" id="ba" size="">
+                <option value=" " size="40">Select BA</option>
+                <option value="EmpA" size="40">Emp A</option>
+                <option value="EmpB" size="40">Emp B</option>
+                </select> <br>
+
+                <label for="employee">Department</label><br>
+                <select name=" " type="text" id="ba" size="">
+                <option value=" " size="40">Select Department</option>
+                <option value="EmpA" size="40">Emp A</option>
+                <option value="EmpB" size="40">Emp B</option>
+                </select> <br>
+
+                <label for="employee">Project Head</Head></label><br>
+                <select name=" " type="text" id="ba" size="">
+                <option value=" " size="40">Select Head</option>
+                <option value="EmpA" size="40">Emp A</option>
+                <option value="EmpB" size="40">Emp B</option>
+                </select> <br> <br><br>
+              
+                <table id="list" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                  <th>ProjectCode</th>
+                  <th>ProjectName</th>
+                  <th>ClientName</th>
+                  <th>StartDate</th>
+                  <th>TargetDate</th>
+                  <th>BA</th>
+                  <th>Department</th>
+                  <th>ProjectHead</th>
+                  <th>TeamMember</th>
+                  <th>Status</th>
+                  <th>View</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td> </td>
+                    <td>Dummy</td>
+                    <td>Dumm1</td>
+                    <td>Thane</td>
+                    <td>M</td>
+                    <td>Dum@ort.com</td>
+                    <td>Devops</td>
+                    <td>Ongoing</td>
+                  </tr>
+                                
+                  </tfoot>
+                </table>
+              </div>
+              <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </section>
+  
+{% endblock %}

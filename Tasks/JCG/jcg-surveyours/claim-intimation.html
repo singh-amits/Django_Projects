@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <!-- /Added by HTTrack -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Language" content="en" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>jcg-surveyors</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+        <meta name="description" content="Examples of just how powerful ArchitectUI really is!" />
+        <!-- Disable tap highlight on IE -->
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="main.d810cf0ae7f39f28f336.css" rel="stylesheet" />
+        <link href="assets/css/custom.css" rel="stylesheet" />
+        <link href="assets/css/responsive.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+        <style>
+            .fixed-sidebar .app-main .app-main__outer {
+                padding-left: 40px;
+            }
+            .ul-content {
+                line-height: 21px;
+            }
+            .btn-primary {
+                color: #fff;
+                background-color: #43416b;
+                border-color: #31305d;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            .btn-outline-primary {
+                color: #43416b;
+                border-color: #43416b;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            .btn-primary:hover {
+                color: #43417e;
+                background-color: #ffffff;
+                border-color: #43416b;
+                transition: 0.5s all;
+            }
+            .btn-outline-primary:hover {
+                color: #fff;
+                background-color: #43416b;
+                border-color: #43416b;
+            }
+            .highlight {
+                color: #31305d;
+            }
+            .card {
+                border-radius: 1.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
+            <div class="app-header">
+                <div class="app-header__mobile-menu">
+                    <div>
+                        <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="app-header__menu">
+                    <span>
+                        <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                            <span class="btn-icon-wrapper">
+                                <i class="fa fa-ellipsis-v fa-w-6"></i>
+                            </span>
+                        </button>
+                    </span>
+                </div>
+                <div class="app-header__content">
+                    <div class="app-header-left"></div>
+                    <div class="app-header-right">
+                        <div class="header-dots">
+                            <div class="dropdown">
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
+                                    <div class="dropdown-menu-header">
+                                        <div class="dropdown-menu-header-inner bg-premium-dark">
+                                            <div class="menu-header-image" style="background-image: url('assets/images/dropdown-header/abstract4.jpg');"></div>
+                                            <div class="menu-header-content text-white">
+                                                <h5 class="menu-header-title">Users Online</h5>
+                                                <h6 class="menu-header-subtitle">Recent Account Activity Overview</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-chart">
+                                        <div class="widget-chart-content">
+                                            <div class="icon-wrapper rounded-circle">
+                                                <div class="icon-wrapper-bg opacity-9 bg-focus"></div>
+                                                <i class="lnr-users text-white"></i>
+                                            </div>
+                                            <div class="widget-numbers">
+                                                <span>344k</span>
+                                            </div>
+                                            <div class="widget-subheading pt-2">
+                                                Profile views since last login
+                                            </div>
+                                            <div class="widget-description text-danger">
+                                                <span class="pr-1"><span>176%</span></span>
+                                                <i class="fa fa-arrow-left"></i>
+                                            </div>
+                                        </div>
+                                        <div class="widget-chart-wrapper">
+                                            <div id="dashboard-sparkline-carousel-3-pop"></div>
+                                        </div>
+                                    </div>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item-divider mt-0 nav-item"></li>
+                                        <li class="nav-item-btn text-center nav-item">
+                                            <button class="btn-shine btn-wide btn-pill btn btn-warning btn-sm"><i class="fa fa-cog fa-spin mr-2"></i>View Details</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-main">
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <div class="app-page-title app-page-title-simple">
+                            <div class="page-title-wrapper">
+                                <div class="page-title-heading top-headings">
+                                    <a href="#"><img src="assets/img/jcg-logo.png" alt="JCG Logo" class="w-60" /></a>
+                                    <a href="dashboard.html">Dashboard</a>
+                                    <a href="#">Master</a>
+                                    <a href="claim-intimation.html" class="mm-active">Claim Intimation</a>
+                                    <a href="#">CAT Intimation</a>
+                                    <a href="#">Respository</a>
+                                    <a href="#">Reports</a>
+                                </div>
+                                <div class="header-btn-lg noti-top">
+                                    <button type="button" class="hamburger hamburger--elastic open-right-drawer">
+                                        <div class="noti">
+                                            <span class="icon-wrapper-bg bg-danger"></span>
+                                            <i class="pe-7s-bell"> </i>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="header-btn-lg pr-0 pl-5">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left ml-3 mr-10 header-user-info">
+                                                <div class="widget-heading">Hi, Alex</div>
+                                                <div class="widget-subheading">P. Handler</div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="btn-group">
+                                                    <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                                        <i class="fa fa-angle-down ml-2 opacity-8 custom-dd-icon"></i>
+                                                        <img width="42" class="rounded-circle ml-3" src="assets/images/avatars/1.jpg" alt="" />
+                                                    </a>
+                                                    <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
+                                                        <div class="dropdown-menu-header">
+                                                            <div class="dropdown-menu-header-inner bg-info">
+                                                                <div class="menu-header-image opacity-2" style="background-image: url('assets/images/dropdown-header/city3.jpg');"></div>
+                                                                <div class="menu-header-content text-left">
+                                                                    <div class="widget-content p-0">
+                                                                        <div class="widget-content-wrapper">
+                                                                            <div class="widget-content-left mr-3">
+                                                                                <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="" />
+                                                                            </div>
+                                                                            <div class="widget-content-left">
+                                                                                <div class="widget-heading">Alina Mcloughlin</div>
+                                                                                <div class="widget-subheading opacity-8">A short profile description</div>
+                                                                            </div>
+                                                                            <div class="widget-content-right mr-2">
+                                                                                <button class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="scroll-area-xs" style="height: 150px;">
+                                                            <div class="scrollbar-container ps">
+                                                                <ul class="nav flex-column">
+                                                                    <li class="nav-item-header nav-item">Activity</li>
+                                                                    <li class="nav-item">
+                                                                        <a href="javascript:void(0);" class="nav-link">
+                                                                            Chat
+                                                                            <div class="ml-auto badge badge-pill badge-info">
+                                                                                8
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="javascript:void(0);" class="nav-link">Recover Password</a>
+                                                                    </li>
+                                                                    <li class="nav-item-header nav-item">My Account</li>
+                                                                    <li class="nav-item">
+                                                                        <a href="javascript:void(0);" class="nav-link">
+                                                                            Settings
+                                                                            <div class="ml-auto badge badge-success">New</div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="javascript:void(0);" class="nav-link">
+                                                                            Messages
+                                                                            <div class="ml-auto badge badge-warning">512</div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="javascript:void(0);" class="nav-link">Logs</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="nav flex-column">
+                                                            <li class="nav-item-divider mb-0 nav-item"></li>
+                                                        </ul>
+                                                        <div class="grid-menu grid-menu-2col">
+                                                            <div class="no-gutters row">
+                                                                <div class="col-sm-6">
+                                                                    <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-warning">
+                                                                        <i class="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i>
+                                                                        Message Inbox
+                                                                    </button>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
+                                                                        <i class="pe-7s-ticket icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
+                                                                        <b>Support Tickets</b>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="nav flex-column">
+                                                            <li class="nav-item-divider nav-item"></li>
+                                                            <li class="nav-item-btn text-center nav-item">
+                                                                <button class="btn-wide btn btn-primary btn-sm">Open Messages</button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Generate and Edit Claim  -->
+                        <div class="row  mt-3">
+                            <div class="col-md-6">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-body card-pad">
+                                        <h1 class="c-darkerblue fbold500">
+                                            Generate<br />
+                                            Claim
+                                        </h1>
+                                        <!-- Radio buttons -->
+                                        <div class="position-relative form-group pl-2">
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label c-darkblack fbold500"> 
+                                                   <input type="radio" class="form-check-input" name="optradio" />Marine
+                                                </label>
+                                            </div>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label c-darkblack fbold500">
+                                                   <input type="radio" class="form-check-input" name="optradio" />Non Marine
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- Button -->
+                                        <button type="button" class="btn-wide float-left btn-pill btn-hover-shine btn btn-primary mt-4 flip">Proceed</button>
+                                        <img src="assets/img/generate-claim.svg" alt="Generate Claim" class="float-right pb-5 pt-5" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-body card-pad">
+                                        <h1 class="c-darkerblue fbold500">
+                                            Edit Current<br />
+                                            Claim
+                                        </h1>
+                                        <!-- Radio buttons -->
+                                        <div class="position-relative form-group pl-2">
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label c-darkblack fbold500"> <input type="radio" class="form-check-input" name="optradio" />Marine </label>
+                                            </div>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label c-darkblack fbold500"> <input type="radio" class="form-check-input" name="optradio" />Non Marine </label>
+                                            </div>
+                                        </div>
+                                        <form action="">
+                                            <div class="form-row">
+                                                <div class="col-md-7 pt-3">
+                                                    <div class="position-relative form-group">
+                                                        <label for="JCG Reference" class="">Enter JCG Reference No.</label>
+                                                        <input name="ref_no" id="ref_no" type="text" class="form-control" placeholder="Enter Reference No." />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!-- Button -->
+                                        <button type="button" class="btn-wide float-left btn-pill btn-hover-shine btn btn-primary mt-4 flip">Proceed</button>
+                                        <img src="assets/img/edit-current-claim.svg" alt="Edit Current Claim" class="float-right pt-4 pb-1" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Ends here -->
+
+                        <!-- Form wizard -->
+                        <div class="row pl-4 pr-4 mb-5 showpanel">
+                            <div class="col-md-12 col-lg-12 ">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-body">
+                                        <div id="smartwizard3" class="forms-wizard-vertical">
+                                            <ul class="forms-wizard d-none">
+                                                <li>
+                                                    <a href="#step-122"> <em>1</em><span>Account Information</span> </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#step-222"> <em>2</em><span>Payment Information</span> </a>
+                                                </li>
+                                            </ul>
+                                            <div class="form-wizard-content">
+                                                <div id="step-122">
+                                                    <div class="card-body pl-0 pr-0 pt-0">
+                                                        <h4 class="c-darkerblue pb-4">Create a New Claim</h4>
+                                                        <form>
+                                                            <div class="form-row">
+                                                                <div class="col-md-3">
+                                                                    <ul class="ul-content">
+                                                                        <li>Office</li>
+                                                                        <div class="position-relative form-group">
+                                                                            <select name="select" id="office" class="form-control fc-custom highlight">
+                                                                                <option>Select Type</option>
+                                                                                <option selected="">Mumbai Office</option>
+                                                                                <option>Andheri Office</option>
+                                                                                <option>Malad Office</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <ul class="ul-content">
+                                                                        <li>Principal Handler</li>
+                                                                        <div class="position-relative form-group">
+                                                                            <select name="select" id="principal_handler" class="form-control fc-custom highlight">
+                                                                                <option>Select Type</option>
+                                                                                <option selected="">Mr. Krishna Iyer</option>
+                                                                                <option>Priciple Handler 1</option>
+                                                                                <option>Priciple Handler 2</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <ul class="ul-content">
+                                                                        <li>Claim Handler</li>
+                                                                        <div class="position-relative form-group">
+                                                                            <select name="select" id="claim_handler" class="form-control fc-custom highlight">
+                                                                                <option>Select Type</option>
+                                                                                <option selected="">Mr. Rupesh Tayde</option>
+                                                                                <option>Claim Handler 1</option>
+                                                                                <option>Claim Handler 2</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="Conteact No" class="">Contact No.</label>
+                                                                        <input name="contact_no" id="contact_no" type="text" class="form-control" placeholder="Enter Contact Details" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="email id" class="">Email ID</label>
+                                                                        <input name="email_add" id="email_add" type="email" class="form-control" placeholder="Enter Email ID" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <ul class="ul-content">
+                                                                        <li>Sub-Department</li>
+                                                                        <div class="position-relative form-group">
+                                                                            <select name="select" id="sub_department" class="form-control fc-custom highlight">
+                                                                                <option>Select Type</option>
+                                                                                <option selected="">Fire</option>
+                                                                                <option>Sub-Department 1</option>
+                                                                                <option>Sub-Department 2</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <ul class="ul-content">
+                                                                        <li>Insurer Company</li>
+                                                                        <div class="position-relative form-group">
+                                                                            <select name="select" id="insurer_company" class="form-control fc-custom highlight">
+                                                                                <option>Select Type</option>
+                                                                                <option selected="">ICICI Lombard</option>
+                                                                                <option>Insurer Company 1</option>
+                                                                                <option>Insurer Company 2</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <ul class="ul-content">
+                                                                        <li>Insurer Office & Code</li>
+                                                                        <div class="position-relative form-group">
+                                                                            <select name="select" id="insurer_office" class="form-control fc-custom">
+                                                                                <option>Select Office</option>
+                                                                                <option>Office 1</option>
+                                                                                <option>Office 2</option>
+                                                                                <option>Office 3</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="DO/RO" class="">DO/RO</label>
+                                                                        <input name="do_ro" id="do_ro" type="text" class="form-control" placeholder="N/A" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="Insurer Claim No." class="">Insurer Claim No.</label>
+                                                                        <input name="insurer_claim_no" id="insurer_claim_no" type="text" class="form-control" placeholder="Enter Number" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <ul class="ul-content">
+                                                                        <li>Insurer Dealing Person</li>
+                                                                        <div class="position-relative form-group">
+                                                                            <select name="select" id="insurer_dealing" class="form-control fc-custom">
+                                                                                <option>Select Person</option>
+                                                                                <option>Person 1</option>
+                                                                                <option>Person 2</option>
+                                                                                <option>Person 3</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="Insurer Contact No." class="">Insurer Contact No.</label>
+                                                                        <input name="insurer_cont_no" id="insurer_cont_no" type="text" class="form-control" placeholder="Enter Contact Details" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="Insurer Email ID" class="">Insurer Email ID</label>
+                                                                        <input name="insurer_email" id="insurer_email" type="email" class="form-control" placeholder="Enter Email ID" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="Insured Name" class="">Insured Name</label>
+                                                                        <input name="insured_name" id="insured_name" type="text" class="form-control" placeholder="Enter Name" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="Policy No." class="">Policy No.</label>
+                                                                        <input name="policy_no" id="policy_no" type="text" class="form-control" placeholder="Enter Policy No." />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="Broker Details" class="">Broker Details</label>
+                                                                        <input name="broker_deatils" id="broker_deatils" type="text" class="form-control" placeholder="Enter Broker Details" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="Date of Intimation" class="">Date of Intimation</label>
+                                                                        <input name="date_intimation" id="date_intimation" type="date" class="form-control pr-0" value="Select Date" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="Date of Appointment" class="">Date of Appointment</label>
+                                                                        <input name="date_appoint" id="date_appoint" type="date" class="form-control pr-0" value="Select Date" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="Date of Loss" class="">Date of Loss</label>
+                                                                        <input name="date_loss" id="date_loss" type="date" class="form-control pr-0" value="Select Date " />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <ul class="ul-content">
+                                                                        <li>Consignment Damage</li>
+                                                                        <div class="position-relative form-group">
+                                                                            <select name="select" id="consig_dam" class="form-control fc-custom">
+                                                                                <option>Select Option</option>
+                                                                                <option>Option 1</option>
+                                                                                <option>Option 2</option>
+                                                                                <option>Option 3</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <ul class="ul-content">
+                                                                        <li>Cause of Loss</li>
+                                                                        <div class="position-relative form-group">
+                                                                            <select name="select" id="cause_loss" class="form-control fc-custom">
+                                                                                <option>Select Cause</option>
+                                                                                <option>Cause 1</option>
+                                                                                <option>Cause 2</option>
+                                                                                <option>Cause 3</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="Estimated Loss" class="">Estimated Loss</label>
+                                                                        <input name="loss_amt" id="loss_amt" type="text" class="form-control" placeholder="Enter Loss Amount" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <div class="position-relative form-group">
+                                                                        <label for="Quantity Damage" class="">Quantity Damage</label>
+                                                                        <input name="qyt_damage" id="qyt_damage" type="text" class="form-control" placeholder="Enter Damage Amount" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 pt-3">
+                                                                    <ul class="ul-content">
+                                                                        <li>Unit of Measurement</li>
+                                                                        <div class="position-relative form-group">
+                                                                            <select name="select" id="unit_measurement" class="form-control fc-custom">
+                                                                                <option>Select Measurement</option>
+                                                                                <option>Measurement 1</option>
+                                                                                <option>Measurement 2</option>
+                                                                                <option>Measurement 3</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-6 pt-3">
+                                                                    <ul class="ul-content">
+                                                                        <li>Comments/Description</li>
+                                                                        <textarea name="text" id="comments" class="form-control"></textarea>
+                                                                    </ul>
+                                                                </div>
+                                                                <!-- Blank -->
+                                                                <div class="col-md-6"></div>
+                                                                <!-- Ends here -->
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="clearfix">
+                                            <a type="button" id="next-btn22" class="btn-wide float-right btn-pill btn-hover-shine btn btn-primary c-white">Save & Proceed</a>
+                                            <a href="http://ortlx.com/demo/jcg-surveyors/claim-intimation.html" type="button" class="float-right btn-wide btn-pill mr-3 btn btn-outline-secondary">Go Back</a>
+                                        </div>
+                                                </div>
+                                                <div id="step-222">
+                                                    <div id="accordion" class="accordion-wrapper mb-3">
+                                                        <div class="card">
+                                                            <h4 class="c-darkerblue pb-2">Create a New Claim</h4>
+                                                            <div data-parent="#accordion" id="collapseTwo" class="collapse show">
+                                                                <div class="card-body pl-0 pr-0">
+                                                                    <form class="" autocomplete="off">
+                                                                        <div class="form-row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label for="Consignment Arrival Date" class="">Consignment Arrival Date</label>
+                                                                                    <input name="consignment_arrival" id="consignment_arrival" type="date" class="form-control pr-0" value="Select Date" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label for="Consignment Unloading" class="">Consignment Unloading Date</label>
+                                                                                    <input name="consignment_unloading" id="consignment_unloading" type="date" class="form-control pr-0" value="Select Date" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label for="Consignment Invoice No. & Date" class="">Consignment Invoice No. & Date</label>
+                                                                                    <input name="consignment_invoice" id="consignment_invoice" type="date" class="form-control pr-0" value="Select Date" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label for="LR/ RR/ AWB/ BL No. & Date" class="">LR/ RR/ AWB/ BL No. & Date</label>
+                                                                                    <input name="bl_no" id="bl_no" type="text" class="form-control pr-0" placeholder="Enter here" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3 pt-3">
+                                                                                <ul class="ul-content">
+                                                                                    <li>Critical/ Non-Critical</li>
+                                                                                    <div class="position-relative form-group">
+                                                                                        <select name="select" id="crit_non_crit" class="form-control fc-custom highlight">
+                                                                                            <option>Select Type</option>
+                                                                                            <option selected>Non-Critical</option>
+                                                                                            <option>Critical</option>
+                                                                                            <option>Non-Critical</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="col-md-3 pt-3">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label for="Survey Location" class="">Survey Location</label>
+                                                                                    <input name="survey_location" id="survey_location" type="text" class="form-control" placeholder="Enter Location" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3 pt-3">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label for="Area" class="">Area</label>
+                                                                                    <input name="area" id="area" type="text" class="form-control" placeholder="Enter Area" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3 pt-3">
+                                                                                <ul class="ul-content">
+                                                                                    <li>City</li>
+                                                                                    <div class="position-relative form-group">
+                                                                                        <select name="select" id="city" class="form-control fc-custom">
+                                                                                            <option>Select City</option>
+                                                                                            <option>Mumbai</option>
+                                                                                            <option>Delhi</option>
+                                                                                            <option>Jaipur</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="col-md-3 pt-3">
+                                                                                <ul class="ul-content">
+                                                                                    <li>State</li>
+                                                                                    <div class="position-relative form-group">
+                                                                                        <select name="select" id="state" class="form-control fc-custom">
+                                                                                            <option>Select State</option>
+                                                                                            <option>Maharashtra</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="col-md-3 pt-3">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label for="Pincode" class="">Pincode</label>
+                                                                                    <input name="area" id="pincode" type="text" class="form-control" placeholder="Enter Pincode" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3 pt-3">
+                                                                                <ul class="ul-content">
+                                                                                    <li>Survey Type</li>
+                                                                                    <div class="position-relative form-group">
+                                                                                        <select name="select" id="survey_type" class="form-control fc-custom">
+                                                                                            <option>Select Type</option>
+                                                                                            <option>Survey Type 1</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="col-md-3 pt-3">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label for="Insured Contact Survey" class="">Insured Contact Person for Survey</label>
+                                                                                    <input name="insured_contact_survey" id="insured_contact_survey" type="text" class="form-control" placeholder="Enter Contact Details" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3 pt-3">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label for="Insured Contact Person" class="">Insured Contact Person No.</label>
+                                                                                    <input name="insured_contact_person" id="insured_contact_person" type="text" class="form-control" placeholder="Enter Contact Number" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3 pt-3">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label for="Insured Contact" class="">Insured Contact Person Email ID</label>
+                                                                                    <input name="insured_contact_email" id="insured_contact_email" type="text" class="form-control" placeholder="Enter Email ID" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3 pt-3">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label for="Broker Email ID" class="">Broker Email ID</label>
+                                                                                    <input name="broker_email" id="broker_email" type="email" class="form-control" placeholder="Enter Email ID" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3 pt-3">
+                                                                                <div class="position-relative form-group">
+                                                                                    <label for="Appointment Date" class="">Appointment Date</label>
+                                                                                    <input name="appt_date" id="appt_date" type="date" class="form-control pr-0" value="Select Date " />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3 pt-3">
+                                                                                <ul class="ul-content">
+                                                                                    <li>Appointment Time</li>
+                                                                                    <div class="position-relative form-group">
+                                                                                        <select name="select" id="appointment_time" class="form-control fc-custom">
+                                                                                            <option>Select Surveyor</option>
+                                                                                            <option>Surveyor 1</option>
+                                                                                            <option>Surveyor 2</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="col-md-3 pt-3">
+                                                                                <ul class="ul-content">
+                                                                                    <li>Surveyor Licenced</li>
+                                                                                    <div class="position-relative form-group">
+                                                                                        <select name="select" id="survey_licenced" class="form-control fc-custom">
+                                                                                            <option>Select Surveyor</option>
+                                                                                            <option>Surveyor 1</option>
+                                                                                            <option>Surveyor 2</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="col-md-3 pt-3">
+                                                                                <ul class="ul-content">
+                                                                                    <li>Surveyor Actual</li>
+                                                                                    <div class="position-relative form-group">
+                                                                                        <select name="select" id="surveyor_actual" class="form-control fc-custom">
+                                                                                            <option>Select Surveyor</option>
+                                                                                            <option>Surveyor 1</option>
+                                                                                            <option>Surveyor 2</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clearfix">
+                                            <a type="button" id="next-btn22" class="btn-wide float-right btn-pill btn-hover-shine btn btn-primary c-white" data-toggle="modal" data-target="#refModal">Save & Proceed</a>
+                                            <a type="button" id="prev-btn22" class="float-right btn-wide btn-pill mr-3 btn btn-outline-secondary">Go Back</a>
+                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- lower row end-->
+                        <!-- Ends here form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app-drawer-wrapper">
+            <div class="drawer-content-wrapper">
+                <div class="scrollbar-container">
+                    <div class="drawer-section">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5 class="c-darkblue"><i class="ion-android-arrow-back"></i>&nbsp;&nbsp;&nbsp;Notifications</h5>
+                            </div>
+                            <div class="col-5 notification-alert">
+                                <span>02 Notifications</span>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <h5 class="text-left card-title"><b>Today</b></h5>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="notify-box p-0 mb-4">
+                                        <div class="row">
+                                            <div class="col-md-12 d-flex pl-0">
+                                                <div class="col-md-2">
+                                                    <span class="ml-2"><img src="assets/img/icons/icici.png" alt="Icici Bank" class="img-fluid" /> </span>
+                                                </div>
+                                                <div class="col-md-10 pl-0">
+                                                    <p class="mb-2"><strong> Krishna Iyer</strong> accepted your claim request for <strong>JCG Ref. No. 0591.</strong></p>
+                                                    <p class="mb-2 c-darkgrey font15"><i class="ion-android-calendar"></i> 28-10-2020</p>
+                                                    <p class="c-darkgrey font15 mb-2"><i class="lnr-map-marker"></i> Andheri East, Mumbai - 400012</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notify-box p-0">
+                                        <div class="row">
+                                            <div class="col-md-12 d-flex pl-0">
+                                                <div class="col-md-2">
+                                                    <span class="ml-2"><img src="assets/img/icons/sbi.png" alt="Sbi Bank" class="img-fluid" /> </span>
+                                                </div>
+                                                <div class="col-md-10 pl-0">
+                                                    <p class="mb-2"><strong> Rupesh Tayde</strong> sent you a claim request <strong>JCG Ref. No. 4201.</strong></p>
+                                                    <p class="mb-2 c-darkgrey font15"><i class="ion-android-calendar"></i> 27-10-2020</p>
+                                                    <p class="c-darkgrey font15 mb-3"><i class="lnr-map-marker"></i> Andheri East, Mumbai - 400012</p>
+                                                    <div class="noti-btns">
+                                                        <a href="#" class="mb-2 mr-2 btn-outline-reject">Reject</a>
+                                                        <a href="#" class="mb-2 mr-2 btn-outline-accept">Accept</a>
+                                                        <a href="#"><i class="pe-7s-paper-plane"> </i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-left card-title mt-4"><b>Yesterday</b></h5>
+                                        <div class="notify-box p-0">
+                                            <div class="row">
+                                                <div class="col-md-12 d-flex pl-0">
+                                                    <div class="col-md-2">
+                                                        <span class="ml-2"><img src="assets/img/icons/sbi.png" alt="Sbi Bank" class="img-fluid" /> </span>
+                                                    </div>
+                                                    <div class="col-md-10 pl-0">
+                                                        <p class="mb-2"><strong> Rupesh Tayde</strong> sent you a claim request <strong>JCG Ref. No. 5460.</strong></p>
+                                                        <p class="mb-2 c-darkgrey font15"><i class="ion-android-calendar"></i> 27-10-2020</p>
+                                                        <p class="c-darkgrey font15 mb-3"><i class="lnr-map-marker"></i> Andheri East, Mumbai - 400012</p>
+                                                        <div class="noti-btns">
+                                                            <a href="#" class="mb-2 mr-2 btn-outline-reject">Reject</a>
+                                                            <a href="#" class="mb-2 mr-2 btn-outline-accept">Accept</a>
+                                                            <a href="#"><i class="pe-7s-paper-plane"> </i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-left card-title mt-4"><b>24 Oct, 2020</b></h5>
+                                        <div class="notify-box p-0">
+                                            <div class="row">
+                                                <div class="col-md-12 d-flex pl-0">
+                                                    <div class="col-md-2">
+                                                        <span class="ml-2"><img src="assets/img/icons/sbi.png" alt="Sbi Bank" class="img-fluid" /> </span>
+                                                    </div>
+                                                    <div class="col-md-10 pl-0">
+                                                        <p class="mb-2">Your expense request of <strong> ₹ 1500/-</strong> for <strong>JCG Ref.No. 4516</strong> has been accepted.</p>
+                                                        <p class="mb-2 c-darkgrey font15"><i class="ion-android-calendar"></i> 20-10-2020</p>
+                                                        <p class="c-darkgrey font15 mb-3"><i class="lnr-map-marker"></i> Andheri East, Mumbai - 400012</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reference Modal -->
+        <div class="modal fade login-bord-div" id="refModal" tabindex="-1" role="dialog" aria-labelledby="refModalModalLabel" aria-hidden="true">
+            <div class="modal-dialog refmodal" role="document">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <p class="mb-4 font-size-lg mt-4">
+                            JCG Reference number is generated successfully and<br />
+                            your reference number is 101
+                        </p>
+                        <a href="#" class="btn btn-primary mb-4">Proceed</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Ends here -->
+        <div class="app-drawer-overlay d-none animated fadeIn"></div>
+        <script type="text/javascript" src="assets/scripts/main.d810cf0ae7f39f28f336.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+        <script> 
+$(document).ready(function(){
+  $(".flip").click(function(){
+    $(".showpanel").slideDown("slow");
+  });
+});
+</script>
+    </body>
+</html>

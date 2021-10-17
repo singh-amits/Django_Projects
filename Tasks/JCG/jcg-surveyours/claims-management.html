@@ -1,0 +1,978 @@
+<!doctype html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jcg-surveyors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="Examples of just how powerful ArchitectUI really is!">
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link href="main.d810cf0ae7f39f28f336.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    .dropdown-menu {
+        min-width: 9rem;
+    }
+
+    .dropdown-menu-rounded {
+        padding-left: 5px;
+        padding-right: 0;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        color: #acacac;
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    .dropdown-menu-header {
+        margin-bottom: 0;
+    }
+</style>
+
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
+        <div class="app-header">
+            <div class="app-header__logo">
+                <div class="logo-text">
+                    <h3>P. Handler</h3>
+                </div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div class="app-header__content">
+                <div class="app-header-left">
+                </div>
+                <div class="app-header-right">
+                    <div class="header-dots">
+                        <div class="dropdown">
+
+                            <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
+                                <div class="dropdown-menu-header">
+                                    <div class="dropdown-menu-header-inner bg-premium-dark">
+                                        <div class="menu-header-image" style="background-image: url('assets/images/dropdown-header/abstract4.jpg');">
+                                        </div>
+                                        <div class="menu-header-content text-white">
+                                            <h5 class="menu-header-title">Users Online</h5>
+                                            <h6 class="menu-header-subtitle">Recent Account Activity Overview</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-chart">
+                                    <div class="widget-chart-content">
+                                        <div class="icon-wrapper rounded-circle">
+                                            <div class="icon-wrapper-bg opacity-9 bg-focus"></div>
+                                            <i class="lnr-users text-white"></i>
+                                        </div>
+                                        <div class="widget-numbers">
+                                            <span>344k</span>
+                                        </div>
+                                        <div class="widget-subheading pt-2">
+                                            Profile views since last login
+                                        </div>
+                                        <div class="widget-description text-danger">
+                                            <span class="pr-1"><span>176%</span></span>
+                                            <i class="fa fa-arrow-left"></i>
+                                        </div>
+                                    </div>
+                                    <div class="widget-chart-wrapper">
+                                        <div id="dashboard-sparkline-carousel-3-pop"></div>
+                                    </div>
+                                </div>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item-divider mt-0 nav-item"></li>
+                                    <li class="nav-item-btn text-center nav-item">
+                                        <button class="btn-shine btn-wide btn-pill btn btn-warning btn-sm">
+                                            <i class="fa fa-cog fa-spin mr-2"></i>View Details
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app-main">
+            <div class="app-sidebar sidebar-shadow">
+                <div class="app-header__logo">
+                    <div class="logo-src"></div>
+                    <div class="header__pane ml-auto">
+                        <div>
+                            <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-header__mobile-menu">
+                    <div>
+                        <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="app-header__menu">
+                    <span>
+                        <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                            <span class="btn-icon-wrapper">
+                                <i class="fa fa-ellipsis-v fa-w-6"></i>
+                            </span>
+                        </button>
+                    </span>
+                </div>
+                <div class="scrollbar-sidebar">
+                    <div class="app-sidebar__inner">
+                        <ul class="vertical-nav-menu">
+
+                            <li class="mm-active">
+                                <a href="index.html">
+                                    <i class="metismenu-icon pe-7s-home"></i>Dashboards
+                                </a>
+                            </li>
+                            <li class="mm">
+                                <a href="claims-management.html">
+                                    <i class="metismenu-icon pe-7s-news-paper"></i>Claims Mgmt.
+                                </a>
+                            </li>
+                            <li class="mm">
+                                <a href="cat-claims.html">
+                                    <i class="metismenu-icon pe-7s-culture"></i>CAT's
+                                </a>
+                            </li>
+                            <li class="mm">
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-cash"></i>Expenses
+
+                                </a>
+
+                            </li>
+                            <li class="mm">
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-user"></i>Accounts
+
+                                </a>
+
+                            </li>
+                            <li class="mm">
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-cloud"></i>Data Warehouse
+
+                                </a>
+
+                            </li>
+
+                            <li class="mm">
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-help1"></i>Help Center
+
+                                </a>
+
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="app-main__outer">
+                <div class="app-main__inner">
+                    <div class="app-page-title app-page-title-simple">
+                        <div class="page-title-wrapper">
+                            <div class="page-title-heading top-headings">
+                                <div>
+                                    <div class="page-title-head center-elem">
+                                        <span class="d-inline-block">Claims Mgmt.</span>
+                                    </div>
+                                    <div class="page-title-subheading opacity-10">
+                                        <p>Last Updated on 27.09.2020 at 16:00 Hrs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-title-actions">
+                                <div class="search-wrapper">
+                                    <div class="input-holder">
+                                        <input type="text" class="search-input" placeholder="Type to search">
+                                        <i class="pe-7s-search search-icon"> </i>
+                                        <!--  <button class="search-icon"><span></span></button> -->
+                                    </div>
+                                    <button class="close"></button>
+                                </div>
+                            </div>
+                            <div class="header-btn-lg noti-top">
+                                <button type="button" class="hamburger hamburger--elastic open-right-drawer">
+                                    <div class="noti">
+                                        <span class="icon-wrapper-bg bg-danger"></span>
+                                        <i class="pe-7s-bell"> </i>
+                                    </div>
+                                </button>
+
+                            </div>
+
+                            <button type="button" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false" class="p-0 btn btn-link dd-chart-btn">
+
+
+                                <i class="pe-7s-config"> </i>
+
+                            </button>
+
+                            <div class="header-btn-lg pr-0">
+                                <div class="widget-content p-0">
+                                    <div class="widget-content-wrapper">
+                                        <div class="widget-content-left  ml-3 mr-10 header-user-info">
+                                            <div class="widget-heading"> Hi, Alex </div>
+                                            <div class="widget-subheading"> P. Handler </div>
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="btn-group">
+                                                <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                                    <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                                    <img width="42" class="rounded-circle ml-3" src="assets/images/avatars/1.jpg" alt="">
+
+                                                </a>
+                                                <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
+                                                    <div class="dropdown-menu-header">
+                                                        <div class="dropdown-menu-header-inner bg-info">
+                                                            <div class="menu-header-image opacity-2" style="background-image: url('assets/images/dropdown-header/city3.jpg');">
+                                                            </div>
+                                                            <div class="menu-header-content text-left">
+                                                                <div class="widget-content p-0">
+                                                                    <div class="widget-content-wrapper">
+                                                                        <div class="widget-content-left mr-3">
+                                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="widget-content-left">
+                                                                            <div class="widget-heading">Alina Mcloughlin
+                                                                            </div>
+                                                                            <div class="widget-subheading opacity-8">A
+                                                                                short profile description</div>
+                                                                        </div>
+                                                                        <div class="widget-content-right mr-2">
+                                                                            <button class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="scroll-area-xs" style="height: 150px;">
+                                                        <div class="scrollbar-container ps">
+                                                            <ul class="nav flex-column">
+                                                                <li class="nav-item-header nav-item">Activity</li>
+                                                                <li class="nav-item">
+                                                                    <a href="javascript:void(0);" class="nav-link">Chat
+                                                                        <div class="ml-auto badge badge-pill badge-info">
+                                                                            8</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="javascript:void(0);" class="nav-link">Recover Password</a>
+                                                                </li>
+                                                                <li class="nav-item-header nav-item">My Account
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="javascript:void(0);" class="nav-link">Settings
+                                                                        <div class="ml-auto badge badge-success">New
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="javascript:void(0);" class="nav-link">Messages
+                                                                        <div class="ml-auto badge badge-warning">512
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="javascript:void(0);" class="nav-link">Logs</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item-divider mb-0 nav-item"></li>
+                                                    </ul>
+                                                    <div class="grid-menu grid-menu-2col">
+                                                        <div class="no-gutters row">
+                                                            <div class="col-sm-6">
+                                                                <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-warning">
+                                                                    <i class="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i>
+                                                                    Message Inbox
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
+                                                                    <i class="pe-7s-ticket icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
+                                                                    <b>Support Tickets</b>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item-divider nav-item">
+                                                        </li>
+                                                        <li class="nav-item-btn text-center nav-item">
+                                                            <button class="btn-wide btn btn-primary btn-sm"> Open
+                                                                Messages </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row filter-row">
+                        <div class="col-md-12 text-right">
+                            <a href="#" class="exclaim"><i class="pe-7s-info"> </i></a>
+                            <a href="#" class="filter"><i class="pe-7s-filter"> </i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Card 1 -->
+                            <div class="main-card mb-5 card border-25">
+                                <div class="card-body card-pad">
+                                    <div class="row">
+                                        <div class="col-md-4 p-0">
+                                            <div class="claim-info">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <p class="number">1</p>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <ul class="header-megamenu nav pull-right">
+                                                            <li class="dropdown nav-item">
+                                                                <a aria-haspopup="true" data-toggle="dropdown" class="nav-link pt-0 text-uppercase" aria-expanded="false">
+                                                                    <i class="nav-link-icon fa fa-circle "></i> Active
+                                                                    <i class="fa fa-angle-down ml-2 opacity-5"></i>
+                                                                </a>
+                                                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-rounded dropdown-menu-sm rm-pointers dropdown-menu">
+                                                                    <div class="dropdown-menu-header">
+                                                                        <div class="dropdown-menu-header-inner p-0">
+                                                                            <div class="menu-header-content text-left">
+                                                                                <div class="menu-header-btn-pane">
+                                                                                    <button type="button" tabindex="0" class="dropdown-item">Completed</button>
+                                                                                    <button type="button" tabindex="0" class="dropdown-item">Rejected</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <ul class="ul-content">
+                                                            <li>JCG Ref No.</li>
+                                                            <li>Claim No.</li>
+                                                            <li>Policy No.</li>
+                                                            <li>Insured Name</li>
+                                                            <li>Claim Handler</li>
+                                                            <li>Field Surveyor</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <ul class="ul-details">
+                                                            <li><img src="assets/img/icons/icici.png" alt="Icici Bank" class="img-fluid w-img" />951</li>
+                                                            <li>A12345</li>
+                                                            <li>123456789123</li>
+                                                            <li>Suraj Prakash Singh</li>
+                                                            <li>
+                                                                <div class="dropdown d-inline-block w-100">
+                                                                    <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="mb-2 mr-2 dropdown-toggle btn btn-outline-dark w-dropdown text-left">Self
+                                                                    </button>
+                                                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+                                                                        <button type="button" tabindex="0" class="dropdown-item">Rupesh Tayde</button>
+
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>Krishna Iyer</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="row claims-management-outerdiv">
+                                                <div class="col-md-12 mb-5">
+
+                                                    <ol class="timeline">
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig1" name="trig1" type="radio">
+                                                            <i class="timeline__step-marker"><img src="assets/img/icons/running.png"></i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig3" name="trig3" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-dblue"><a href="joint-inspection-report.html" class="c-bluelinking">JIR</a></i>
+                                                            <span class="timeline__step-title"><i class="pe-7s-check"> </i></span>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig2" name="trig2" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-dblue"><a href="initial-loss-advice.html" class="c-bluelinking">ILA</a></i>
+                                                            <span class="timeline__step-title"><i class="pe-7s-check"> </i></span>
+                                                        </li>
+                                                        
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig4" name="trig4" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-orange "><a href="letter-of-requirement.html" class="linking">LOR</a> </i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig5" name="trig5" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-orange"><a href="interim-report.html" class="linking"> Interim</a></i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig6" name="trig6" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-orange"><a href="final-survey-report.html" class="linking">FSR</a></i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig7" name="trig7" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-grey">Amount</i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig8" name="trig8" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-grey">Overview</i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig9" name="trig9" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-grey">Expense</i>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <p class="type-of-loss">Type of Loss</p>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <ul class="loss-type">
+                                                        <li><i class="fa fa-circle" aria-hidden="true"></i> &nbsp;&nbsp;Completed</li>
+                                                        <li><i class="fa fa-circle c-yellow" aria-hidden="true"></i> &nbsp;&nbsp;Processing</li>
+                                                        <li><i class="fa fa-circle c-grey" aria-hidden="true"></i> &nbsp;&nbsp;Pending</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. </p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <button class="mt-1 btn-pill btn btn-primary dol">DOL: 01-01-2020</button>
+                                                    <button class="mt-1 btn-pill btn btn-primary dol">DOL: 01-01-2020</button>
+                                                    <button class="mt-1 btn-pill btn btn-primary dol">DOL: 01-01-2020</button>
+                                                </div>
+                                                <div class="col-md-4 text-right">
+                                                    <button class="mb-2 mr-2 btn-icon-fa btn btn-primary"><i class="fa fa-eye"> </i></button>
+                                                    <button class="mb-2 mr-2 btn-icon-fa btn btn-primary" data-toggle="modal" data-target="#assignModal"><i class="fa fa-share"> </i></button>
+                                                    <a href="claims-summary.html"><button class="mb-2 mr-2 btn-pill btn btn-primary view-detail ">View Details</button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="main-card mb-5 card border-25">
+                                <div class="card-body card-pad">
+                                    <div class="row">
+                                        <div class="col-md-4 p-0">
+                                            <div class="claim-info">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <p class="number">2</p>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <ul class="header-megamenu nav pull-right">
+                                                            <li class="dropdown nav-item">
+                                                                <a aria-haspopup="true" data-toggle="dropdown" class="nav-link nav-link2 pt-0 text-uppercase" aria-expanded="false">
+                                                                    <i class="nav-link-icon nav-link-icon2 fa fa-circle"></i> Completed
+                                                                    <i class="fa fa-angle-down ml-2 opacity-5"></i>
+                                                                </a>
+                                                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-rounded dropdown-menu-sm rm-pointers dropdown-menu">
+                                                                    <div class="dropdown-menu-header">
+                                                                        <div class="dropdown-menu-header-inner p-0">
+                                                                            <div class="menu-header-content text-left">
+                                                                                <div class="menu-header-btn-pane">
+                                                                                    <button type="button" tabindex="0" class="dropdown-item">Completed</button>
+                                                                                    <button type="button" tabindex="0" class="dropdown-item">Rejected</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <ul class="ul-content">
+                                                            <li>JCG Ref No.</li>
+                                                            <li>Claim No.</li>
+                                                            <li>Policy No.</li>
+                                                            <li>Insured Name</li>
+                                                            <li>Claim Handler</li>
+                                                            <li>Field Surveyor</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <ul class="ul-details">
+                                                            <li><img src="assets/img/icons/icici.png" alt="Icici Bank" class="img-fluid w-img" /> 951</li>
+                                                            <li>A12345</li>
+                                                            <li>123456789123</li>
+                                                            <li>Lagoon Hotels & Resorts...</li>
+                                                            <li>
+                                                                <div class="dropdown d-inline-block w-100">
+                                                                    <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="mb-2 mr-2 dropdown-toggle btn btn-outline-dark w-dropdown text-left">Krishna Iyer
+                                                                    </button>
+                                                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+                                                                        <button type="button" tabindex="0" class="dropdown-item">Rupesh Tayde</button>
+
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>Rupesh Tayde</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="row claims-management-outerdiv">
+                                                <div class="col-md-12 mb-5">
+
+                                                    <ol class="timeline">
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig1" name="trig1" type="radio">
+                                                            <i class="timeline__step-marker"><img src="assets/img/icons/running.png"></i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig3" name="trig3" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-dblue"><a href="joint-inspection-report.html" class="c-bluelinking">JIR</a></i>
+
+                                                            <span class="timeline__step-title"><i class="pe-7s-check"> </i></span>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig2" name="trig2" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-dblue"><a href="initial-loss-advice.html" class="c-bluelinking">ILA</a></i>
+                                                            <span class="timeline__step-title"><i class="pe-7s-check"> </i></span>
+                                                        </li>
+                                                        
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig4" name="trig4" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-orange "><a href="letter-of-requirement.html" class="linking">LOR</a> </i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig5" name="trig5" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-orange"><a href="interim-report.html" class="linking"> Interim</a></i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig6" name="trig6" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-orange"><a href="final-survey-report.html" class="linking">FSR</a></i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig7" name="trig7" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-grey">Amount</i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig8" name="trig8" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-grey">Overview</i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig9" name="trig9" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-grey">Expense</i>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <p class="type-of-loss">Type of Loss</p>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <ul class="loss-type">
+                                                        <li><i class="fa fa-circle" aria-hidden="true"></i> &nbsp;&nbsp;Completed</li>
+                                                        <li><i class="fa fa-circle c-yellow" aria-hidden="true"></i> &nbsp;&nbsp;Processing</li>
+                                                        <li><i class="fa fa-circle c-grey" aria-hidden="true"></i> &nbsp;&nbsp;Pending</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. </p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <button class="mt-1 btn-pill btn btn-primary dol">DOL: 01-01-2020</button>
+                                                    <button class="mt-1 btn-pill btn btn-primary dol">DOL: 01-01-2020</button>
+                                                    <button class="mt-1 btn-pill btn btn-primary dol">DOL: 01-01-2020</button>
+                                                </div>
+                                                <div class="col-md-4 text-right">
+                                                    <button class="mb-2 mr-2 btn-icon-fa btn btn-primary"><i class="fa fa-eye"> </i></button>
+                                                    <button class="mb-2 mr-2 btn-icon-fa btn btn-primary" data-toggle="modal" data-target="#assignModal"><i class="fa fa-share"> </i></button>
+                                                     <a href="claims-summary.html"><button class="mb-2 mr-2 btn-pill btn btn-primary view-detail ">View Details</button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="main-card mb-5 card border-25">
+                                <div class="card-body card-pad">
+                                    <div class="row">
+                                        <div class="col-md-4 p-0">
+                                            <div class="claim-info">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <p class="number">3</p>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <ul class="header-megamenu nav pull-right">
+                                                            <li class="dropdown nav-item">
+                                                                <a aria-haspopup="true" data-toggle="dropdown" class="nav-link pt-0 text-uppercase" aria-expanded="false">
+                                                                    <i class="nav-link-icon fa fa-circle "></i> Active
+                                                                    <i class="fa fa-angle-down ml-2 opacity-5"></i>
+                                                                </a>
+                                                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-rounded dropdown-menu-sm rm-pointers dropdown-menu">
+                                                                    <div class="dropdown-menu-header">
+                                                                        <div class="dropdown-menu-header-inner p-0">
+                                                                            <div class="menu-header-content text-left">
+                                                                                <div class="menu-header-btn-pane">
+                                                                                    <button type="button" tabindex="0" class="dropdown-item">Completed</button>
+                                                                                    <button type="button" tabindex="0" class="dropdown-item">Rejected</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <ul class="ul-content">
+                                                            <li>JCG Ref No.</li>
+                                                            <li>Claim No.</li>
+                                                            <li>Policy No.</li>
+                                                            <li>Insured Name</li>
+                                                            <li>Claim Handler</li>
+                                                            <li>Field Surveyor</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <ul class="ul-details">
+                                                            <li><img src="assets/img/icons/icici.png" alt="Icici Bank" class="img-fluid w-img" /> 951</li>
+                                                            <li>A12345</li>
+                                                            <li>123456789123</li>
+                                                            <li>Suraj Prakash Singh</li>
+                                                            <li>
+                                                                <div class="dropdown d-inline-block w-100">
+                                                                    <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="mb-2 mr-2 dropdown-toggle btn btn-outline-dark w-dropdown text-left">Self
+                                                                    </button>
+                                                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+                                                                        <button type="button" tabindex="0" class="dropdown-item">Rupesh Tayde</button>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>Krishna Iyer</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="row claims-management-outerdiv">
+                                                <div class="col-md-12 mb-5">
+
+                                                    <ol class="timeline">
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig1" name="trig1" type="radio">
+                                                            <i class="timeline__step-marker"><img src="assets/img/icons/running.png"></i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig3" name="trig3" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-dblue"><a href="joint-inspection-report.html" class="c-bluelinking">JIR</a></i>
+                                                            <span class="timeline__step-title"><i class="pe-7s-check"> </i></span>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig2" name="trig2" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-dblue"><a href="initial-loss-advice.html" class="c-bluelinking">ILA</a></i>
+                                                            <span class="timeline__step-title"><i class="pe-7s-check"> </i></span>
+                                                        </li>
+                                                        
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig4" name="trig4" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-orange "><a href="letter-of-requirement.html" class="linking">LOR</a> </i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig5" name="trig5" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-orange"><a href="interim-report.html" class="linking"> Interim</a></i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig6" name="trig6" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-orange"><a href="final-survey-report.html" class="linking">FSR</a></i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig7" name="trig7" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-grey">Amount</i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig8" name="trig8" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-grey">Overview</i>
+                                                        </li>
+                                                        <li class="timeline__step done">
+                                                            <input class="timeline__step-radio" id="trig9" name="trig9" type="radio">
+                                                            <i class="timeline__step-marker timline-txt-grey">Expense</i>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <p class="type-of-loss">Type of Loss</p>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <ul class="loss-type">
+                                                        <li><i class="fa fa-circle" aria-hidden="true"></i> &nbsp;&nbsp;Completed</li>
+                                                        <li><i class="fa fa-circle c-yellow" aria-hidden="true"></i> &nbsp;&nbsp;Processing</li>
+                                                        <li><i class="fa fa-circle c-grey" aria-hidden="true"></i> &nbsp;&nbsp;Pending</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. </p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <button class="mt-1 btn-pill btn btn-primary dol">DOL: 01-01-2020</button>
+                                                    <button class="mt-1 btn-pill btn btn-primary dol">DOL: 01-01-2020</button>
+                                                    <button class="mt-1 btn-pill btn btn-primary dol">DOL: 01-01-2020</button>
+                                                </div>
+                                                <div class="col-md-4 text-right">
+                                                    <button class="mb-2 mr-2 btn-icon-fa btn btn-primary"><i class="fa fa-eye"> </i></button>
+                                                    <button class="mb-2 mr-2 btn-icon-fa btn btn-primary" data-toggle="modal" data-target="#assignModal"><i class="fa fa-share"> </i></button>
+                                                    <a href="claims-summary.html"><button class="mb-2 mr-2 btn-pill btn btn-primary view-detail ">View Details</button></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app-drawer-wrapper">
+        <!-- <div class="drawer-nav-btn">
+            <button type="button" class="hamburger hamburger--elastic is-active">
+                <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+            </button>
+          </div> -->
+        <div class="drawer-content-wrapper ">
+            <div class="scrollbar-container">
+                <div class="drawer-section">
+                    <div class="row">
+                        <div class="col-7">
+                            <h5 class="c-darkblue"><i class="ion-android-arrow-back"></i>&nbsp;&nbsp;&nbsp;Notifications</h5>
+                        </div>
+                        <div class="col-5 notification-alert">
+                            <span>02 Notifications</span>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <h5 class="text-left card-title"><b>Today</b> </h5>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="notify-box p-0 mb-4">
+                                    <div class="row">
+                                        <div class="col-md-12 d-flex pl-0">
+                                            <div class="col-md-2">
+                                                <span class="ml-2"><img src="assets/img/icons/icici.png" alt="Icici Bank" class="img-fluid"> </span>
+                                            </div>
+                                            <div class="col-md-10 pl-0">
+                                                <p class="mb-2"><strong> Krishna Iyer</strong> accepted your claim request for <strong>JCG Ref. No. 0591.</strong>
+                                                </p>
+                                                <p class="mb-2 c-darkgrey font15"><i class="ion-android-calendar"></i> 28-10-2020</p>
+                                                <p class="c-darkgrey font15 mb-2"><i class="lnr-map-marker "></i> Andheri East, Mumbai - 400012</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notify-box p-0">
+                                    <div class="row">
+                                        <div class="col-md-12 d-flex pl-0">
+                                            <div class="col-md-2">
+                                                <span class="ml-2"><img src="assets/img/icons/sbi.png" alt="Sbi Bank" class="img-fluid"> </span>
+                                            </div>
+                                            <div class="col-md-10 pl-0">
+                                                <p class="mb-2"><strong> Rupesh Tayde</strong> sent you a claim request <strong>JCG Ref. No. 4201.</strong>
+                                                </p>
+                                                <p class="mb-2 c-darkgrey font15"><i class="ion-android-calendar"></i> 27-10-2020</p>
+                                                <p class="c-darkgrey font15 mb-3"><i class="lnr-map-marker "></i> Andheri East, Mumbai - 400012</p>
+                                                <button class="mb-2 mr-2 btn-pill btn-transition btn btn-outline-danger">Reject</button>
+                                                <button class="mb-2 mr-2 btn-pill btn-transition btn btn-outline-success">Accept</button>
+                                                <button class="mb-2 mr-2 btn-icon btn-icon-only btn-pill btn btn-outline-secondary"><i class="pe-7s-paper-plane btn-icon-wrapper"> </i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h5 class="text-left card-title mt-4"><b>Yesterday</b> </h5>
+                                    <div class="notify-box p-0">
+                                        <div class="row">
+                                            <div class="col-md-12 d-flex pl-0">
+                                                <div class="col-md-2">
+                                                    <span class="ml-2"><img src="assets/img/icons/sbi.png" alt="Sbi Bank" class="img-fluid"> </span>
+                                                </div>
+                                                <div class="col-md-10 pl-0">
+                                                    <p class="mb-2"><strong> Rupesh Tayde</strong> sent you a claim request <strong>JCG Ref. No. 5460.</strong>
+                                                    </p>
+                                                    <p class="mb-2 c-darkgrey font15"><i class="ion-android-calendar"></i> 27-10-2020</p>
+                                                    <p class="c-darkgrey font15 mb-3"><i class="lnr-map-marker "></i> Andheri East, Mumbai - 400012</p>
+                                                    <button class="mb-2 mr-2 btn-pill btn-transition btn btn-outline-danger">Reject</button>
+                                                    <button class="mb-2 mr-2 btn-pill btn-transition btn btn-outline-success">Accept</button>
+                                                    <button class="mb-2 mr-2 btn-icon btn-icon-only btn-pill btn btn-outline-secondary"><i class="pe-7s-paper-plane btn-icon-wrapper"> </i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h5 class="text-left card-title mt-4"><b>24 Oct, 2020</b> </h5>
+                                    <div class="notify-box p-0">
+                                        <div class="row">
+                                            <div class="col-md-12 d-flex pl-0">
+                                                <div class="col-md-2">
+                                                    <span class="ml-2"><img src="assets/img/icons/sbi.png" alt="Sbi Bank" class="img-fluid"> </span>
+                                                </div>
+                                                <div class="col-md-10 pl-0">
+                                                    <p class="mb-2">Your expense request of <strong> ₹ 1500/-</strong> for <strong>JCG Ref.No. 4516</strong> has been accepted.
+                                                    </p>
+                                                    <p class="mb-2 c-darkgrey font15"><i class="ion-android-calendar"></i> 20-10-2020</p>
+                                                    <p class="c-darkgrey font15 mb-3"><i class="lnr-map-marker "></i> Andheri East, Mumbai - 400012</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="assignModal" tabindex="-1" role="dialog" aria-labelledby="assignModalLabel" aria-hidden="true">
+        <div class="modal-dialog w-100 mx-auto assign-survey-dialog">
+        <div class="modal-content">
+         <div class="modal-head">
+          <div class="h5 modal-title text-center">
+           <h4 class="mt-2">
+            <div>Assign Survey</div>         
+           </h4>
+           <span class="close-icon"><i class="pe-7s-close"> </i></span>
+          </div>
+         </div>
+         <div class="modal-body">
+
+          <div class="row">
+           <div class="col-md-12">
+            <h6 class="jcgno">JCG Ref No. 951</h6>
+           </div>
+          </div>
+
+          <div class="row select-handler">
+           <div class="col-md-5">
+            <h6>Select Claim Handler</h6>
+           </div>
+           <div class="col-md-6">
+            <div>
+             <select id="custom-inp-top" type="select" class="custom-select">
+              <option>Customer Name</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+             </select>
+            </div>
+           </div>
+          </div>
+
+          <div class="row login-alert">
+           <div class="col-md-12">
+            <h6>The Claim exceeds the Slab of ₹ 50,00,000</h6>
+           </div>
+          </div>
+
+          <div class="row assign-div">
+           <div class="col-md-12">
+            <h6>Assign the claim to Mr. Cutomer Name ?</h6>
+            <div class="buttons">
+            <a href="index.html" class="cnl-btn">Cancel</a>
+            <a href="claims-summary.html" class="asgn-btn">Assign</a>
+           </div>
+            <a href="#" class="d-asgn-btn">DIRECT ASSIGN A SURVEYOR</a>
+           </div>
+          </div>
+         </div>
+         
+        </div>
+       </div>
+    </div>
+    <div class="app-drawer-overlay d-none animated fadeIn"></div>
+    <script type="text/javascript" src="assets/scripts/main.d810cf0ae7f39f28f336.js"></script>
+</body>
+
+</html>

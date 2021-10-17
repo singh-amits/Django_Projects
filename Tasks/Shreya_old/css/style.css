@@ -1,0 +1,133 @@
+#header {
+  background-color: brown;
+}
+.nav {
+  background-color: brown;
+}
+li {
+  color: brown;
+  /* background-color: white; */
+  display: inline;
+  float: left;
+  padding: 0px 30px 0px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+#places {
+  max-width: 20%;
+  height: auto;
+}
+
+#my_about {
+  float: center;
+}
+
+.h2 {
+  font-display: brown;
+}
+
+.title {
+  display: table;
+  margin: 0 auto 50px;
+  width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.fa {
+  background-color: brown;
+  padding: 10px;
+  font-size: 20px;
+  text-align: right;
+  text-decoration: none;
+  margin: 2px 1px;
+  right: 0;
+  /* position: absolute; */
+}
+
+.fa-facebook {
+  color: white;
+}
+.fa-pinterest {
+  color: white;
+}
+.fa-twitter {
+  color: white;
+}
+
+.team-carousel {
+  float: left;
+  width: 100%;
+  margin-bottom: -30px;
+}
+
+#p.container-fluid {
+  background-image: url('.images/parallax4.jpg') repeat;
+  background-image: #ffffff url('.images/parallax4.jpg') repeat center center;
+}
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+header {
+  left: 0;
+  padding-top: 30px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-logo {
+  float: left;
+}
+
+.slider {
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+footer {
+  float: left;
+  width: 100%;
+}
+
+.contact-info {
+  float: left;
+  width: 100%;
+}
+
+form.contact {
+  float: left;
+  width: 100%;
+}
+
+body {
+  float: left;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  font-family: "Times New Roman", serif;
+  color: #6c6c6c;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+}
